@@ -50,11 +50,16 @@
             this.cADASTROvisitLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cADASTROVISITANTELOGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cADASTROvisit_LogTableAdapter = new COMPLETE_FLAT_UI.BancoLocalhostTableAdapters.CADASTROvisit_LogTableAdapter();
+            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
+            this.cADASTROvisitLogBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.cADASTROvisit_LogTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.CADASTROvisit_LogTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_VISITANTELOGBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROvisitLogBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTELOGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cADASTROvisitLogBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // bancoLocalhost
@@ -106,7 +111,7 @@
             this.qUADRADataGridViewTextBoxColumn,
             this.aPARTAMENTODataGridViewTextBoxColumn,
             this.Dt_Atualizacao});
-            this.dataGridView.DataSource = this.cADASTROvisitLogBindingSource;
+            this.dataGridView.DataSource = this.cADASTROvisitLogBindingSource1;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -229,6 +234,20 @@
             // 
             this.cADASTROvisit_LogTableAdapter.ClearBeforeFill = true;
             // 
+            // bancoBandB
+            // 
+            this.bancoBandB.DataSetName = "BancoBandB";
+            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cADASTROvisitLogBindingSource1
+            // 
+            this.cADASTROvisitLogBindingSource1.DataMember = "CADASTROvisit_Log";
+            this.cADASTROvisitLogBindingSource1.DataSource = this.bancoBandB;
+            // 
+            // cADASTROvisit_LogTableAdapter1
+            // 
+            this.cADASTROvisit_LogTableAdapter1.ClearBeforeFill = true;
+            // 
             // HistoricoVisitante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,8 +259,12 @@
             this.Text = "HistoricoVisitante";
             this.Load += new System.EventHandler(this.HistoricoVisitante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhost)).EndInit();
+           
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROvisitLogBindingSource)).EndInit();
+           
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cADASTROvisitLogBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,5 +289,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn qUADRADataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aPARTAMENTODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dt_Atualizacao;
+        private BancoBandB bancoBandB;
+        private System.Windows.Forms.BindingSource cADASTROvisitLogBindingSource1;
+        private BancoBandBTableAdapters.CADASTROvisit_LogTableAdapter cADASTROvisit_LogTableAdapter1;
     }
 }

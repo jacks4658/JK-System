@@ -38,7 +38,7 @@
             this.cADASTRO_LogTableAdapter = new COMPLETE_FLAT_UI.BancoFormularioTableAdapters.CADASTRO_LogTableAdapter();
             this.tableAdapterManager1 = new COMPLETE_FLAT_UI.BancoFormularioTableAdapters.TableAdapterManager();
             this.cADASTROLogBindingSource9 = new System.Windows.Forms.BindingSource(this.components);
-            this.bancoLocalhost = new COMPLETE_FLAT_UI.BancoLocalhost();
+         
             this.cADASTROLogBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
             this.cADASTROLogBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
             this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
@@ -62,7 +62,7 @@
             this.cADASTROLogBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarCadastroBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarCadastroTableAdapter = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroTableAdapter();
-            this.cADASTRO_LogTableAdapter3 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.CADASTRO_LogTableAdapter();
+           
             this.cADASTRO_LogTableAdapter4 = new COMPLETE_FLAT_UI.BancoLocalhostTableAdapters.CADASTRO_LogTableAdapter();
             this.tableAdapterManager2 = new COMPLETE_FLAT_UI.BancoDataSetTableAdapters.TableAdapterManager();
             this.cADASTRO_LogDataGridView = new System.Windows.Forms.DataGridView();
@@ -82,7 +82,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bancoFormulario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_LogBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROLogBindingSource9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhost)).BeginInit();
+        
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROLogBindingSource8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROLogBindingSource7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
@@ -149,17 +149,16 @@
             // cADASTROLogBindingSource9
             // 
             this.cADASTROLogBindingSource9.DataMember = "CADASTRO_Log";
-            this.cADASTROLogBindingSource9.DataSource = this.bancoLocalhost;
+  
             // 
             // bancoLocalhost
             // 
-            this.bancoLocalhost.DataSetName = "BancoLocalhost";
-            this.bancoLocalhost.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+           
             // 
             // cADASTROLogBindingSource8
             // 
             this.cADASTROLogBindingSource8.DataMember = "CADASTRO_Log";
-            this.cADASTROLogBindingSource8.DataSource = this.bancoLocalhost;
+        
             // 
             // cADASTROLogBindingSource7
             // 
@@ -315,7 +314,7 @@
             // 
             // cADASTRO_LogTableAdapter3
             // 
-            this.cADASTRO_LogTableAdapter3.ClearBeforeFill = true;
+   
             // 
             // cADASTRO_LogTableAdapter4
             // 
@@ -439,10 +438,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.bancoFormulario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_LogBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROLogBindingSource9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhost)).EndInit();
+          
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROLogBindingSource8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROLogBindingSource7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
+          
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -493,8 +492,7 @@
         private System.Windows.Forms.BindingSource mostrarCadastroBindingSource;
         private BancoBandBTableAdapters.MostrarCadastroTableAdapter mostrarCadastroTableAdapter;
         private System.Windows.Forms.BindingSource cADASTROLogBindingSource7;
-        private BancoBandBTableAdapters.CADASTRO_LogTableAdapter cADASTRO_LogTableAdapter3;
-        private BancoLocalhost bancoLocalhost;
+       
         private System.Windows.Forms.BindingSource cADASTROLogBindingSource8;
         private System.Windows.Forms.BindingSource cADASTROLogBindingSource9;
         private BancoLocalhostTableAdapters.CADASTRO_LogTableAdapter cADASTRO_LogTableAdapter4;

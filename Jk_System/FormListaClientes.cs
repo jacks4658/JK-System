@@ -34,11 +34,7 @@ namespace COMPLETE_FLAT_UI
         {
             // TODO: esta linha de código carrega dados na tabela 'bancoBandB.MostrarCadastro'. Você pode movê-la ou removê-la conforme necessário.
             this.mostrarCadastroTableAdapter1.Fill(this.bancoBandB.MostrarCadastro);
-            // TODO: esta linha de código carrega dados na tabela 'bancoLocalhost.CADASTRO'. Você pode movê-la ou removê-la conforme necessário.
-            this.cADASTROTableAdapter2.Fill(this.bancoLocalhost.CADASTRO);
-            // TODO: esta linha de código carrega dados na tabela 'bancoLocalhost.CADASTRO_VISITANTE'. Você pode movê-la ou removê-la conforme necessário.
-            this.cADASTRO_VISITANTETableAdapter.Fill(this.bancoLocalhost.CADASTRO_VISITANTE);
-           
+          
 
         }
 

@@ -26,7 +26,9 @@ namespace COMPLETE_FLAT_UI
 
         private void FormInformacaoCadastral_Load(object sender, EventArgs e)
         {
-        
+            // TODO: This line of code loads data into the 'bancoBandB.MostrarCadastroVisitante' table. You can move, or remove it, as needed.
+            this.mostrarCadastroVisitanteTableAdapter1.Fill(this.bancoBandB.MostrarCadastroVisitante);
+
         }
 
 
@@ -49,7 +51,7 @@ namespace COMPLETE_FLAT_UI
 
 
             cADASTROVISITANTEBindingSource.Filter = null;
-            this.cADASTRO_VISITANTETableAdapter1.Fill(this.bancoLocalhost.CADASTRO_VISITANTE);
+            this.mostrarCadastroVisitanteTableAdapter1.Fill(this.bancoBandB.MostrarCadastroVisitante);
 
             if (txtPesquisa.CanSelect)
             {

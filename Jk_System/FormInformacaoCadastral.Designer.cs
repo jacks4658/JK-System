@@ -30,11 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInformacaoCadastral));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -60,16 +59,20 @@
             this.cADASTROVISITANTEBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tableAdapterManager = new COMPLETE_FLAT_UI.BancoLocalhostTableAdapters.TableAdapterManager();
             this.cADASTRO_VISITANTEDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
+            this.mostrarCadastroVisitanteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarCadastroVisitanteTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroVisitanteTableAdapter();
+            this.tableAdapterManager1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
+            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nOMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pLACADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mODELODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cORDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mORADORDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rUADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qUADRADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aPARTAMENTODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource)).BeginInit();
@@ -80,6 +83,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroVisitanteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_VISITANTEDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroVisitanteBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPesquisa
@@ -313,141 +318,137 @@
             this.cADASTRO_VISITANTEDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.cADASTRO_VISITANTEDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
             this.cADASTRO_VISITANTEDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.cADASTRO_VISITANTEDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.cADASTRO_VISITANTEDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.cADASTRO_VISITANTEDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cADASTRO_VISITANTEDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
-            this.cADASTRO_VISITANTEDataGridView.DataSource = this.cADASTROVISITANTEBindingSource1;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.cADASTRO_VISITANTEDataGridView.DefaultCellStyle = dataGridViewCellStyle18;
+            this.iDDataGridViewTextBoxColumn1,
+            this.nOMEDataGridViewTextBoxColumn,
+            this.rGDataGridViewTextBoxColumn,
+            this.pLACADataGridViewTextBoxColumn,
+            this.mODELODataGridViewTextBoxColumn,
+            this.cORDataGridViewTextBoxColumn,
+            this.mORADORDataGridViewTextBoxColumn,
+            this.rUADataGridViewTextBoxColumn,
+            this.qUADRADataGridViewTextBoxColumn,
+            this.aPARTAMENTODataGridViewTextBoxColumn});
+            this.cADASTRO_VISITANTEDataGridView.DataSource = this.mostrarCadastroVisitanteBindingSource1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.cADASTRO_VISITANTEDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.cADASTRO_VISITANTEDataGridView.Dock = System.Windows.Forms.DockStyle.Left;
             this.cADASTRO_VISITANTEDataGridView.EnableHeadersVisualStyles = false;
             this.cADASTRO_VISITANTEDataGridView.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cADASTRO_VISITANTEDataGridView.Location = new System.Drawing.Point(0, 0);
             this.cADASTRO_VISITANTEDataGridView.Name = "cADASTRO_VISITANTEDataGridView";
             this.cADASTRO_VISITANTEDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.cADASTRO_VISITANTEDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Yellow;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
-            this.cADASTRO_VISITANTEDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.cADASTRO_VISITANTEDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.cADASTRO_VISITANTEDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.cADASTRO_VISITANTEDataGridView.Size = new System.Drawing.Size(925, 541);
             this.cADASTRO_VISITANTEDataGridView.TabIndex = 19;
             // 
-            // dataGridViewTextBoxColumn1
+            // bancoBandB
             // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.bancoBandB.DataSetName = "BancoBandB";
+            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataGridViewTextBoxColumn2
+            // mostrarCadastroVisitanteBindingSource1
             // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NOME";
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(38)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle17;
-            this.dataGridViewTextBoxColumn2.HeaderText = "NOME";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 64;
+            this.mostrarCadastroVisitanteBindingSource1.DataMember = "MostrarCadastroVisitante";
+            this.mostrarCadastroVisitanteBindingSource1.DataSource = this.bancoBandB;
             // 
-            // dataGridViewTextBoxColumn3
+            // mostrarCadastroVisitanteTableAdapter1
             // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "RG";
-            this.dataGridViewTextBoxColumn3.HeaderText = "RG";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 48;
+            this.mostrarCadastroVisitanteTableAdapter1.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn4
+            // tableAdapterManager1
             // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "PLACA";
-            this.dataGridViewTextBoxColumn4.HeaderText = "PLACA";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 66;
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+         
+            this.tableAdapterManager1.Connection = null;
+            this.tableAdapterManager1.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // dataGridViewTextBoxColumn5
+            // iDDataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "MODELO";
-            this.dataGridViewTextBoxColumn5.HeaderText = "MODELO";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 78;
+            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
             // 
-            // dataGridViewTextBoxColumn6
+            // nOMEDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "COR";
-            this.dataGridViewTextBoxColumn6.HeaderText = "COR";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 55;
+            this.nOMEDataGridViewTextBoxColumn.DataPropertyName = "NOME";
+            this.nOMEDataGridViewTextBoxColumn.HeaderText = "NOME";
+            this.nOMEDataGridViewTextBoxColumn.Name = "nOMEDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn7
+            // rGDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "MORADOR";
-            this.dataGridViewTextBoxColumn7.HeaderText = "MORADOR";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 88;
+            this.rGDataGridViewTextBoxColumn.DataPropertyName = "RG";
+            this.rGDataGridViewTextBoxColumn.HeaderText = "RG";
+            this.rGDataGridViewTextBoxColumn.Name = "rGDataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn8
+            // pLACADataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "RUA";
-            this.dataGridViewTextBoxColumn8.HeaderText = "RUA";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 55;
+            this.pLACADataGridViewTextBoxColumn.DataPropertyName = "PLACA";
+            this.pLACADataGridViewTextBoxColumn.HeaderText = "PLACA";
+            this.pLACADataGridViewTextBoxColumn.Name = "pLACADataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn9
+            // mODELODataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "QUADRA";
-            this.dataGridViewTextBoxColumn9.HeaderText = "BLOCO";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 68;
+            this.mODELODataGridViewTextBoxColumn.DataPropertyName = "MODELO";
+            this.mODELODataGridViewTextBoxColumn.HeaderText = "MODELO";
+            this.mODELODataGridViewTextBoxColumn.Name = "mODELODataGridViewTextBoxColumn";
             // 
-            // dataGridViewTextBoxColumn10
+            // cORDataGridViewTextBoxColumn
             // 
-            this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "APARTAMENTO";
-            this.dataGridViewTextBoxColumn10.HeaderText = "APARTAMENTO";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 114;
+            this.cORDataGridViewTextBoxColumn.DataPropertyName = "COR";
+            this.cORDataGridViewTextBoxColumn.HeaderText = "COR";
+            this.cORDataGridViewTextBoxColumn.Name = "cORDataGridViewTextBoxColumn";
+            // 
+            // mORADORDataGridViewTextBoxColumn
+            // 
+            this.mORADORDataGridViewTextBoxColumn.DataPropertyName = "MORADOR";
+            this.mORADORDataGridViewTextBoxColumn.HeaderText = "MORADOR";
+            this.mORADORDataGridViewTextBoxColumn.Name = "mORADORDataGridViewTextBoxColumn";
+            // 
+            // rUADataGridViewTextBoxColumn
+            // 
+            this.rUADataGridViewTextBoxColumn.DataPropertyName = "RUA";
+            this.rUADataGridViewTextBoxColumn.HeaderText = "RUA";
+            this.rUADataGridViewTextBoxColumn.Name = "rUADataGridViewTextBoxColumn";
+            // 
+            // qUADRADataGridViewTextBoxColumn
+            // 
+            this.qUADRADataGridViewTextBoxColumn.DataPropertyName = "QUADRA";
+            this.qUADRADataGridViewTextBoxColumn.HeaderText = "QUADRA";
+            this.qUADRADataGridViewTextBoxColumn.Name = "qUADRADataGridViewTextBoxColumn";
+            // 
+            // aPARTAMENTODataGridViewTextBoxColumn
+            // 
+            this.aPARTAMENTODataGridViewTextBoxColumn.DataPropertyName = "APARTAMENTO";
+            this.aPARTAMENTODataGridViewTextBoxColumn.HeaderText = "APARTAMENTO";
+            this.aPARTAMENTODataGridViewTextBoxColumn.Name = "aPARTAMENTODataGridViewTextBoxColumn";
             // 
             // FormInformacaoCadastral
             // 
@@ -478,6 +479,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroVisitanteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_VISITANTEDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroVisitanteBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,15 +513,19 @@
         private System.Windows.Forms.BindingSource cADASTROVISITANTEBindingSource2;
         private BancoLocalhostTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView cADASTRO_VISITANTEDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private BancoBandB bancoBandB;
+        private System.Windows.Forms.BindingSource mostrarCadastroVisitanteBindingSource1;
+        private BancoBandBTableAdapters.MostrarCadastroVisitanteTableAdapter mostrarCadastroVisitanteTableAdapter1;
+        private BancoBandBTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nOMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rGDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pLACADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mODELODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cORDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mORADORDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rUADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qUADRADataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aPARTAMENTODataGridViewTextBoxColumn;
     }
 }

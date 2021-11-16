@@ -34,6 +34,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mostrarCadastroBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.cADASTROBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bancoLocalhostBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bancoLocalhost = new COMPLETE_FLAT_UI.BancoLocalhost();
@@ -62,8 +64,6 @@
             this.cADASTROTableAdapter2 = new COMPLETE_FLAT_UI.BancoLocalhostTableAdapters.CADASTROTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
-            this.mostrarCadastroBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.mostrarCadastroTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroTableAdapter();
             this.tableAdapterManager = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
             this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,6 +73,8 @@
             this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhostBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhost)).BeginInit();
@@ -87,8 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bancoAzureDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoAzureDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -150,6 +150,16 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(711, 457);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // mostrarCadastroBindingSource1
+            // 
+            this.mostrarCadastroBindingSource1.DataMember = "MostrarCadastro";
+            this.mostrarCadastroBindingSource1.DataSource = this.bancoBandB;
+            // 
+            // bancoBandB
+            // 
+            this.bancoBandB.DataSetName = "BancoBandB";
+            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cADASTROBindingSource2
             // 
@@ -366,16 +376,6 @@
             this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
             this.iDDataGridViewTextBoxColumn1.Width = 43;
             // 
-            // bancoBandB
-            // 
-            this.bancoBandB.DataSetName = "BancoBandB";
-            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mostrarCadastroBindingSource1
-            // 
-            this.mostrarCadastroBindingSource1.DataMember = "MostrarCadastro";
-            this.mostrarCadastroBindingSource1.DataSource = this.bancoBandB;
-            // 
             // mostrarCadastroTableAdapter1
             // 
             this.mostrarCadastroTableAdapter1.ClearBeforeFill = true;
@@ -383,7 +383,7 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CADASTRO_LogTableAdapter = null;
+            
             this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
@@ -446,6 +446,8 @@
             this.Text = "FormListaClientes";
             this.Load += new System.EventHandler(this.FormListaClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhostBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhost)).EndInit();
@@ -460,8 +462,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bancoAzureDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoAzureDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
