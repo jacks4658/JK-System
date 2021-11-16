@@ -297,7 +297,7 @@ namespace COMPLETE_FLAT_UI
         {
 
             //String de conexao
-            SqlConnection conexao = new SqlConnection("Server=DESKTOP-C6NHVB9\\SQLEXPRESS;Integrated Security=true;Initial Catalog=Banco;");
+            SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
 
             //inserção sql
 

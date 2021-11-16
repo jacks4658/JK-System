@@ -62,6 +62,10 @@
             this.cADASTROTableAdapter2 = new COMPLETE_FLAT_UI.BancoLocalhostTableAdapters.CADASTROTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
+            this.mostrarCadastroBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.mostrarCadastroTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroTableAdapter();
+            this.tableAdapterManager = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
             this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rECEBIDODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pROPRIETARIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,6 +87,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bancoAzureDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoAzureDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -120,7 +126,7 @@
             this.eNDERECODataGridViewTextBoxColumn,
             this.dESCRICAODataGridViewTextBoxColumn,
             this.cODIGODataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.cADASTROBindingSource2;
+            this.dataGridView1.DataSource = this.mostrarCadastroBindingSource1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -360,6 +366,27 @@
             this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
             this.iDDataGridViewTextBoxColumn1.Width = 43;
             // 
+            // bancoBandB
+            // 
+            this.bancoBandB.DataSetName = "BancoBandB";
+            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mostrarCadastroBindingSource1
+            // 
+            this.mostrarCadastroBindingSource1.DataMember = "MostrarCadastro";
+            this.mostrarCadastroBindingSource1.DataSource = this.bancoBandB;
+            // 
+            // mostrarCadastroTableAdapter1
+            // 
+            this.mostrarCadastroTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CADASTRO_LogTableAdapter = null;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // iDDataGridViewTextBoxColumn2
             // 
             this.iDDataGridViewTextBoxColumn2.DataPropertyName = "ID";
@@ -384,9 +411,9 @@
             // eNDERECODataGridViewTextBoxColumn
             // 
             this.eNDERECODataGridViewTextBoxColumn.DataPropertyName = "ENDERECO";
-            this.eNDERECODataGridViewTextBoxColumn.HeaderText = "BLOCO/AP";
+            this.eNDERECODataGridViewTextBoxColumn.HeaderText = "ENDERECO";
             this.eNDERECODataGridViewTextBoxColumn.Name = "eNDERECODataGridViewTextBoxColumn";
-            this.eNDERECODataGridViewTextBoxColumn.Width = 90;
+            this.eNDERECODataGridViewTextBoxColumn.Width = 99;
             // 
             // dESCRICAODataGridViewTextBoxColumn
             // 
@@ -433,6 +460,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bancoAzureDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoAzureDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,6 +499,10 @@
         private BancoLocalhostTableAdapters.CADASTROTableAdapter cADASTROTableAdapter2;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
+        private BancoBandB bancoBandB;
+        private System.Windows.Forms.BindingSource mostrarCadastroBindingSource1;
+        private BancoBandBTableAdapters.MostrarCadastroTableAdapter mostrarCadastroTableAdapter1;
+        private BancoBandBTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn rECEBIDODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pROPRIETARIODataGridViewTextBoxColumn;

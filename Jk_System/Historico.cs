@@ -39,10 +39,7 @@ namespace COMPLETE_FLAT_UI
 
         private void FormFuncionario_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'bancoLocalhost.CADASTRO_Log'. Você pode movê-la ou removê-la conforme necessário.
-            this.cADASTRO_LogTableAdapter4.Fill(this.bancoLocalhost.CADASTRO_Log);
-            // TODO: esta linha de código carrega dados na tabela 'bancoLocalhost.CADASTRO_Log'. Você pode movê-la ou removê-la conforme necessário.
-
+           
 
 
         }

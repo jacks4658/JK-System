@@ -27,10 +27,6 @@ namespace COMPLETE_FLAT_UI
         private void FormInformacaoCadastral_Load(object sender, EventArgs e)
         {
         
-            // TODO: esta linha de código carrega dados na tabela 'bancoLocalhost.CADASTRO_VISITANTE'. Você pode movê-la ou removê-la conforme necessário.
-            this.cADASTRO_VISITANTETableAdapter1.Fill(this.bancoLocalhost.CADASTRO_VISITANTE);
-
-
         }
 
 

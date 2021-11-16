@@ -48,13 +48,23 @@
             this.loginlogBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.loginlogBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.loginlogBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dtAtualizacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ACAO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Hostname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aCAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bancoFormulario = new COMPLETE_FLAT_UI.BancoFormulario();
+            this.login_LogBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.login_LogTableAdapter2 = new COMPLETE_FLAT_UI.BancoFormularioTableAdapters.login_LogTableAdapter();
+            this.tableAdapterManager1 = new COMPLETE_FLAT_UI.BancoFormularioTableAdapters.TableAdapterManager();
+            this.idLOGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtAtualizacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uSUARIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hOSTNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aCAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.useIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loginNomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.login)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.login_logBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginlogBindingSource)).BeginInit();
@@ -64,6 +74,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.loginlogBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginlogBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoFormulario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.login_LogBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // login
@@ -194,13 +206,6 @@
             this.loginlogBindingSource2.DataMember = "Login_log";
             this.loginlogBindingSource2.DataSource = this.bancoLocalhost;
             // 
-            // dtAtualizacaoDataGridViewTextBoxColumn
-            // 
-            this.dtAtualizacaoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtAtualizacaoDataGridViewTextBoxColumn.DataPropertyName = "Dt_Atualizacao";
-            this.dtAtualizacaoDataGridViewTextBoxColumn.HeaderText = "DATA E HORA";
-            this.dtAtualizacaoDataGridViewTextBoxColumn.Name = "dtAtualizacaoDataGridViewTextBoxColumn";
-            // 
             // NOME
             // 
             this.NOME.DataPropertyName = "NOME";
@@ -225,13 +230,6 @@
             this.Hostname.HeaderText = "Hostname";
             this.Hostname.Name = "Hostname";
             // 
-            // aCAODataGridViewTextBoxColumn
-            // 
-            this.aCAODataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.aCAODataGridViewTextBoxColumn.DataPropertyName = "ACAO";
-            this.aCAODataGridViewTextBoxColumn.HeaderText = "ACAO";
-            this.aCAODataGridViewTextBoxColumn.Name = "aCAODataGridViewTextBoxColumn";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
@@ -250,13 +248,19 @@
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.aCAODataGridViewTextBoxColumn,
             this.Hostname,
             this.dataGridViewTextBoxColumn1,
             this.ACAO,
             this.NOME,
-            this.dtAtualizacaoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.loginlogBindingSource;
+            this.idLOGDataGridViewTextBoxColumn,
+            this.dtAtualizacaoDataGridViewTextBoxColumn,
+            this.uSUARIODataGridViewTextBoxColumn,
+            this.hOSTNAMEDataGridViewTextBoxColumn,
+            this.aCAODataGridViewTextBoxColumn,
+            this.useIdDataGridViewTextBoxColumn,
+            this.loginNomeDataGridViewTextBoxColumn,
+            this.senhaDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.login_LogBindingSource1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -280,6 +284,79 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(636, 329);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // bancoFormulario
+            // 
+            this.bancoFormulario.DataSetName = "BancoFormulario";
+            this.bancoFormulario.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // login_LogBindingSource1
+            // 
+            this.login_LogBindingSource1.DataMember = "login_Log";
+            this.login_LogBindingSource1.DataSource = this.bancoFormulario;
+            // 
+            // login_LogTableAdapter2
+            // 
+            this.login_LogTableAdapter2.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.CADASTRO_LogTableAdapter = null;
+            this.tableAdapterManager1.CADASTROTableAdapter = null;
+            this.tableAdapterManager1.ENCOMENDATableAdapter = null;
+            this.tableAdapterManager1.login_LogTableAdapter = this.login_LogTableAdapter2;
+            this.tableAdapterManager1.LoginTableAdapter = null;
+            this.tableAdapterManager1.UpdateOrder = COMPLETE_FLAT_UI.BancoFormularioTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // idLOGDataGridViewTextBoxColumn
+            // 
+            this.idLOGDataGridViewTextBoxColumn.DataPropertyName = "Id_LOG";
+            this.idLOGDataGridViewTextBoxColumn.HeaderText = "Id_LOG";
+            this.idLOGDataGridViewTextBoxColumn.Name = "idLOGDataGridViewTextBoxColumn";
+            this.idLOGDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dtAtualizacaoDataGridViewTextBoxColumn
+            // 
+            this.dtAtualizacaoDataGridViewTextBoxColumn.DataPropertyName = "Dt_Atualizacao";
+            this.dtAtualizacaoDataGridViewTextBoxColumn.HeaderText = "Dt_Atualizacao";
+            this.dtAtualizacaoDataGridViewTextBoxColumn.Name = "dtAtualizacaoDataGridViewTextBoxColumn";
+            // 
+            // uSUARIODataGridViewTextBoxColumn
+            // 
+            this.uSUARIODataGridViewTextBoxColumn.DataPropertyName = "USUARIO";
+            this.uSUARIODataGridViewTextBoxColumn.HeaderText = "USUARIO";
+            this.uSUARIODataGridViewTextBoxColumn.Name = "uSUARIODataGridViewTextBoxColumn";
+            // 
+            // hOSTNAMEDataGridViewTextBoxColumn
+            // 
+            this.hOSTNAMEDataGridViewTextBoxColumn.DataPropertyName = "HOSTNAME";
+            this.hOSTNAMEDataGridViewTextBoxColumn.HeaderText = "HOSTNAME";
+            this.hOSTNAMEDataGridViewTextBoxColumn.Name = "hOSTNAMEDataGridViewTextBoxColumn";
+            // 
+            // aCAODataGridViewTextBoxColumn
+            // 
+            this.aCAODataGridViewTextBoxColumn.DataPropertyName = "ACAO";
+            this.aCAODataGridViewTextBoxColumn.HeaderText = "ACAO";
+            this.aCAODataGridViewTextBoxColumn.Name = "aCAODataGridViewTextBoxColumn";
+            // 
+            // useIdDataGridViewTextBoxColumn
+            // 
+            this.useIdDataGridViewTextBoxColumn.DataPropertyName = "UseId";
+            this.useIdDataGridViewTextBoxColumn.HeaderText = "UseId";
+            this.useIdDataGridViewTextBoxColumn.Name = "useIdDataGridViewTextBoxColumn";
+            // 
+            // loginNomeDataGridViewTextBoxColumn
+            // 
+            this.loginNomeDataGridViewTextBoxColumn.DataPropertyName = "LoginNome";
+            this.loginNomeDataGridViewTextBoxColumn.HeaderText = "LoginNome";
+            this.loginNomeDataGridViewTextBoxColumn.Name = "loginNomeDataGridViewTextBoxColumn";
+            // 
+            // senhaDataGridViewTextBoxColumn
+            // 
+            this.senhaDataGridViewTextBoxColumn.DataPropertyName = "Senha";
+            this.senhaDataGridViewTextBoxColumn.HeaderText = "Senha";
+            this.senhaDataGridViewTextBoxColumn.Name = "senhaDataGridViewTextBoxColumn";
             // 
             // Historico_de_acesso
             // 
@@ -310,6 +387,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.loginlogBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginlogBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoFormulario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.login_LogBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,12 +411,22 @@
         private System.Windows.Forms.BindingSource loginlogBindingSource1;
         private System.Windows.Forms.BindingSource loginlogBindingSource3;
         private System.Windows.Forms.BindingSource loginlogBindingSource2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtAtualizacaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME;
         private System.Windows.Forms.DataGridViewTextBoxColumn ACAO;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hostname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aCAODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private BancoFormulario bancoFormulario;
+        private System.Windows.Forms.BindingSource login_LogBindingSource1;
+        private BancoFormularioTableAdapters.login_LogTableAdapter login_LogTableAdapter2;
+        private BancoFormularioTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idLOGDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dtAtualizacaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uSUARIODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hOSTNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aCAODataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn useIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loginNomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn senhaDataGridViewTextBoxColumn;
     }
 }

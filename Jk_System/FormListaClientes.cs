@@ -32,6 +32,8 @@ namespace COMPLETE_FLAT_UI
 
         private void FormListaClientes_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'bancoBandB.MostrarCadastro'. Você pode movê-la ou removê-la conforme necessário.
+            this.mostrarCadastroTableAdapter1.Fill(this.bancoBandB.MostrarCadastro);
             // TODO: esta linha de código carrega dados na tabela 'bancoLocalhost.CADASTRO'. Você pode movê-la ou removê-la conforme necessário.
             this.cADASTROTableAdapter2.Fill(this.bancoLocalhost.CADASTRO);
             // TODO: esta linha de código carrega dados na tabela 'bancoLocalhost.CADASTRO_VISITANTE'. Você pode movê-la ou removê-la conforme necessário.
