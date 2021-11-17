@@ -26,7 +26,7 @@ namespace COMPLETE_FLAT_UI
 
             //inserção sql
 
-            String Sql = "INSERT INTO MORADOR(MORADOR,BLOCO_AP,PERFIL,TELEFONE_01,TELEFONE_02,VAGA,LIBERADOS,VEICULOS)VALUES(@MORADOR,@BLOCO_AP,@PERFIL,@TELEFONE_01,@TELEFONE_02,@VAGA,@LIBERADOS,@VEICULOS)";
+            String Sql = "INSERT INTO MORADOR(RG,MORADOR,BLOCO_AP,PERFIL,TELEFONE_01,TELEFONE_02,VAGA,LIBERADOS,VEICULOS)VALUES(@RG,@MORADOR,@BLOCO_AP,@PERFIL,@TELEFONE_01,@TELEFONE_02,@VAGA,@LIBERADOS,@VEICULOS)";
 
            
 
@@ -39,7 +39,8 @@ namespace COMPLETE_FLAT_UI
 
 
                 SqlCommand c = new SqlCommand(Sql, conexao);
-              
+                c.Parameters.Add(new SqlParameter("@RG", this.textBoxRg.Text));
+                textBoxRg.Clear();
                 c.Parameters.Add(new SqlParameter("@MORADOR", this.txtmorador.Text));
                 txtmorador.Clear();
                 c.Parameters.Add(new SqlParameter("@VAGA", this.txtVaga.Text));

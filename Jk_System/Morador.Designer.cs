@@ -57,6 +57,8 @@ namespace COMPLETE_FLAT_UI
             this.label6 = new System.Windows.Forms.Label();
             this.BarraTituloViitante = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBoxRg = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -203,6 +205,8 @@ namespace COMPLETE_FLAT_UI
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.textBoxRg);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.textPerfil);
             this.panel1.Controls.Add(this.label2);
@@ -244,7 +248,7 @@ namespace COMPLETE_FLAT_UI
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(37, 40);
+            this.label2.Location = new System.Drawing.Point(37, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 24;
@@ -267,7 +271,7 @@ namespace COMPLETE_FLAT_UI
             this.txtmorador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtmorador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtmorador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmorador.Location = new System.Drawing.Point(125, 37);
+            this.txtmorador.Location = new System.Drawing.Point(125, 45);
             this.txtmorador.Name = "txtmorador";
             this.txtmorador.Size = new System.Drawing.Size(535, 23);
             this.txtmorador.TabIndex = 20;
@@ -554,6 +558,31 @@ namespace COMPLETE_FLAT_UI
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // textBoxRg
+            // 
+            this.textBoxRg.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBoxRg.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBoxRg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRg.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBoxRg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRg.Location = new System.Drawing.Point(125, 8);
+            this.textBoxRg.Name = "textBoxRg";
+            this.textBoxRg.Size = new System.Drawing.Size(167, 23);
+            this.textBoxRg.TabIndex = 51;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(42, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 17);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "RG";
+            // 
             // Morador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -614,5 +643,7 @@ namespace COMPLETE_FLAT_UI
         private System.Windows.Forms.TextBox textPerfil;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox textVeiculos;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox textBoxRg;
     }
 }
