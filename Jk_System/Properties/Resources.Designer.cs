@@ -93,6 +93,16 @@ namespace COMPLETE_FLAT_UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome_5_ {
+            get {
+                object obj = ResourceManager.GetObject("Design sem nome(5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icono_cliente {
             get {
                 object obj = ResourceManager.GetObject("icono-cliente", resourceCulture);

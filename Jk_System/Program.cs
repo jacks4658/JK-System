@@ -23,7 +23,7 @@ namespace COMPLETE_FLAT_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Morador());
+            Application.Run(new FormMenuPrincipal());
         }
     }
 }

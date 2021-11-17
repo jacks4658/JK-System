@@ -33,10 +33,14 @@
             this.lbFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnListaClientes = new System.Windows.Forms.Button();
             this.SubmenuHistorico = new System.Windows.Forms.Panel();
-            this.HistoricoUsuarios = new System.Windows.Forms.Button();
             this.HistoricoCadastro = new System.Windows.Forms.Button();
+            this.PanelBarraTitulo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tmExpandirMenu = new System.Windows.Forms.Timer(this.components);
+            this.tmContraerMenu = new System.Windows.Forms.Timer(this.components);
+            this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.btnListaClientes = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnLogiout = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
@@ -45,25 +49,21 @@
             this.btnMembresia = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.PanelBarraTitulo = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnNormal = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.tmExpandirMenu = new System.Windows.Forms.Timer(this.components);
-            this.tmContraerMenu = new System.Windows.Forms.Timer(this.components);
-            this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.panelContenedorPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.SubmenuHistorico.SuspendLayout();
+            this.PanelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogiout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.PanelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,6 +127,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.btnListaClientes);
             this.panelMenu.Controls.Add(this.SubmenuHistorico);
             this.panelMenu.Controls.Add(this.button5);
@@ -143,54 +144,13 @@
             this.panelMenu.Size = new System.Drawing.Size(230, 557);
             this.panelMenu.TabIndex = 2;
             // 
-            // btnListaClientes
-            // 
-            this.btnListaClientes.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnListaClientes.FlatAppearance.BorderSize = 0;
-            this.btnListaClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnListaClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnListaClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListaClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListaClientes.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnListaClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnListaClientes.Image")));
-            this.btnListaClientes.Location = new System.Drawing.Point(-30, 129);
-            this.btnListaClientes.Name = "btnListaClientes";
-            this.btnListaClientes.Size = new System.Drawing.Size(254, 50);
-            this.btnListaClientes.TabIndex = 2;
-            this.btnListaClientes.Text = "  Encomendas";
-            this.btnListaClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnListaClientes.UseVisualStyleBackColor = true;
-            this.btnListaClientes.Click += new System.EventHandler(this.btnListaClientes_Click);
-            // 
             // SubmenuHistorico
             // 
-            this.SubmenuHistorico.Controls.Add(this.HistoricoUsuarios);
             this.SubmenuHistorico.Controls.Add(this.HistoricoCadastro);
-            this.SubmenuHistorico.Location = new System.Drawing.Point(3, 364);
+            this.SubmenuHistorico.Location = new System.Drawing.Point(3, 406);
             this.SubmenuHistorico.Name = "SubmenuHistorico";
             this.SubmenuHistorico.Size = new System.Drawing.Size(221, 105);
             this.SubmenuHistorico.TabIndex = 14;
-            // 
-            // HistoricoUsuarios
-            // 
-            this.HistoricoUsuarios.Cursor = System.Windows.Forms.Cursors.Default;
-            this.HistoricoUsuarios.FlatAppearance.BorderSize = 0;
-            this.HistoricoUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.HistoricoUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.HistoricoUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HistoricoUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HistoricoUsuarios.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.HistoricoUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HistoricoUsuarios.Location = new System.Drawing.Point(-3, 52);
-            this.HistoricoUsuarios.Name = "HistoricoUsuarios";
-            this.HistoricoUsuarios.Size = new System.Drawing.Size(230, 50);
-            this.HistoricoUsuarios.TabIndex = 16;
-            this.HistoricoUsuarios.Text = "            Usuarios";
-            this.HistoricoUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HistoricoUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.HistoricoUsuarios.UseVisualStyleBackColor = true;
-            this.HistoricoUsuarios.Visible = false;
-            this.HistoricoUsuarios.Click += new System.EventHandler(this.HistoricoUsuarios_Click);
             // 
             // HistoricoCadastro
             // 
@@ -202,7 +162,7 @@
             this.HistoricoCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HistoricoCadastro.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.HistoricoCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.HistoricoCadastro.Location = new System.Drawing.Point(0, 6);
+            this.HistoricoCadastro.Location = new System.Drawing.Point(0, 3);
             this.HistoricoCadastro.Name = "HistoricoCadastro";
             this.HistoricoCadastro.Size = new System.Drawing.Size(227, 50);
             this.HistoricoCadastro.TabIndex = 15;
@@ -211,6 +171,68 @@
             this.HistoricoCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.HistoricoCadastro.UseVisualStyleBackColor = true;
             this.HistoricoCadastro.Click += new System.EventHandler(this.HistoricoCadastro_Click);
+            // 
+            // PanelBarraTitulo
+            // 
+            this.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.PanelBarraTitulo.Controls.Add(this.pictureBox8);
+            this.PanelBarraTitulo.Controls.Add(this.label1);
+            this.PanelBarraTitulo.Controls.Add(this.btnNormal);
+            this.PanelBarraTitulo.Controls.Add(this.btnMinimizar);
+            this.PanelBarraTitulo.Controls.Add(this.btnMaximizar);
+            this.PanelBarraTitulo.Controls.Add(this.btnCerrar);
+            this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.PanelBarraTitulo.Name = "PanelBarraTitulo";
+            this.PanelBarraTitulo.Size = new System.Drawing.Size(1100, 43);
+            this.PanelBarraTitulo.TabIndex = 1;
+            this.PanelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarraTitulo_MouseDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(70, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 16);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "PREMIUM SEG";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // tmExpandirMenu
+            // 
+            this.tmExpandirMenu.Interval = 15;
+            this.tmExpandirMenu.Tick += new System.EventHandler(this.tmExpandirMenu_Tick);
+            // 
+            // tmContraerMenu
+            // 
+            this.tmContraerMenu.Interval = 15;
+            this.tmContraerMenu.Tick += new System.EventHandler(this.tmContraerMenu_Tick);
+            // 
+            // tmFechaHora
+            // 
+            this.tmFechaHora.Enabled = true;
+            this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
+            // 
+            // btnListaClientes
+            // 
+            this.btnListaClientes.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnListaClientes.FlatAppearance.BorderSize = 0;
+            this.btnListaClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnListaClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnListaClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListaClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListaClientes.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnListaClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnListaClientes.Image")));
+            this.btnListaClientes.Location = new System.Drawing.Point(-30, 137);
+            this.btnListaClientes.Name = "btnListaClientes";
+            this.btnListaClientes.Size = new System.Drawing.Size(254, 50);
+            this.btnListaClientes.TabIndex = 2;
+            this.btnListaClientes.Text = "  Encomendas";
+            this.btnListaClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnListaClientes.UseVisualStyleBackColor = true;
+            this.btnListaClientes.Click += new System.EventHandler(this.btnListaClientes_Click);
             // 
             // button5
             // 
@@ -222,7 +244,7 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(-43, 194);
+            this.button5.Location = new System.Drawing.Point(-43, 197);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(276, 50);
             this.button5.TabIndex = 10;
@@ -267,7 +289,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(-19, 253);
+            this.button3.Location = new System.Drawing.Point(-19, 299);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(254, 50);
             this.button3.TabIndex = 6;
@@ -295,11 +317,11 @@
             this.btnMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembresia.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnMembresia.Image = ((System.Drawing.Image)(resources.GetObject("btnMembresia.Image")));
-            this.btnMembresia.Location = new System.Drawing.Point(-113, 312);
+            this.btnMembresia.Location = new System.Drawing.Point(-113, 354);
             this.btnMembresia.Name = "btnMembresia";
-            this.btnMembresia.Size = new System.Drawing.Size(343, 50);
+            this.btnMembresia.Size = new System.Drawing.Size(427, 50);
             this.btnMembresia.TabIndex = 4;
-            this.btnMembresia.Text = "  Historico";
+            this.btnMembresia.Text = "  Historico Encomendas";
             this.btnMembresia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMembresia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMembresia.UseVisualStyleBackColor = true;
@@ -324,30 +346,14 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(-29, 70);
+            this.button1.Location = new System.Drawing.Point(-26, 71);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(254, 50);
+            this.button1.Size = new System.Drawing.Size(260, 50);
             this.button1.TabIndex = 0;
             this.button1.Text = " Visistantes";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // PanelBarraTitulo
-            // 
-            this.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.PanelBarraTitulo.Controls.Add(this.pictureBox8);
-            this.PanelBarraTitulo.Controls.Add(this.label1);
-            this.PanelBarraTitulo.Controls.Add(this.btnNormal);
-            this.PanelBarraTitulo.Controls.Add(this.btnMinimizar);
-            this.PanelBarraTitulo.Controls.Add(this.btnMaximizar);
-            this.PanelBarraTitulo.Controls.Add(this.btnCerrar);
-            this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.PanelBarraTitulo.Name = "PanelBarraTitulo";
-            this.PanelBarraTitulo.Size = new System.Drawing.Size(1100, 43);
-            this.PanelBarraTitulo.TabIndex = 1;
-            this.PanelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarraTitulo_MouseDown);
             // 
             // pictureBox8
             // 
@@ -358,18 +364,6 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 5;
             this.pictureBox8.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(70, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "PREMIUM SEG";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnNormal
             // 
@@ -432,20 +426,23 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // tmExpandirMenu
+            // button2
             // 
-            this.tmExpandirMenu.Interval = 15;
-            this.tmExpandirMenu.Tick += new System.EventHandler(this.tmExpandirMenu_Tick);
-            // 
-            // tmContraerMenu
-            // 
-            this.tmContraerMenu.Interval = 15;
-            this.tmContraerMenu.Tick += new System.EventHandler(this.tmContraerMenu_Tick);
-            // 
-            // tmFechaHora
-            // 
-            this.tmFechaHora.Enabled = true;
-            this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
+            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(-19, 253);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(230, 50);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "    Moradores";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // FormMenuPrincipal
             // 
@@ -467,12 +464,12 @@
             this.panel1.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.SubmenuHistorico.ResumeLayout(false);
+            this.PanelBarraTitulo.ResumeLayout(false);
+            this.PanelBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogiout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.PanelBarraTitulo.ResumeLayout(false);
-            this.PanelBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
@@ -504,10 +501,10 @@
         private System.Windows.Forms.Timer tmContraerMenu;
         private System.Windows.Forms.Timer tmFechaHora;
         private System.Windows.Forms.Panel SubmenuHistorico;
-        private System.Windows.Forms.Button HistoricoUsuarios;
         private System.Windows.Forms.Button HistoricoCadastro;
         private System.Windows.Forms.PictureBox btnLogiout;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
