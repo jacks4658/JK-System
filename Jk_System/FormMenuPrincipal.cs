@@ -381,6 +381,14 @@ namespace COMPLETE_FLAT_UI
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Morador fm = new Morador
+                    ();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAoFechar);
+            AbrirFormEnPanel(fm);
+        }
+
 
         //METODO PARA HORA E FECHA ACTUAL ----------------------------------------------------------
         private void tmFechaHora_Tick(object sender, EventArgs e)

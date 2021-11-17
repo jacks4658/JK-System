@@ -34,6 +34,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rECEBIDODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROPRIETARIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eNDERECODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mostrarCadastroBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.cADASTROBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -66,12 +72,6 @@
             this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mostrarCadastroTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroTableAdapter();
             this.tableAdapterManager = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
-            this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rECEBIDODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROPRIETARIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eNDERECODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
@@ -150,6 +150,47 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.Size = new System.Drawing.Size(711, 457);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // iDDataGridViewTextBoxColumn2
+            // 
+            this.iDDataGridViewTextBoxColumn2.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn2.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn2.Name = "iDDataGridViewTextBoxColumn2";
+            this.iDDataGridViewTextBoxColumn2.Width = 43;
+            // 
+            // rECEBIDODataGridViewTextBoxColumn
+            // 
+            this.rECEBIDODataGridViewTextBoxColumn.DataPropertyName = "RECEBIDO";
+            this.rECEBIDODataGridViewTextBoxColumn.HeaderText = "RECEBIDO";
+            this.rECEBIDODataGridViewTextBoxColumn.Name = "rECEBIDODataGridViewTextBoxColumn";
+            this.rECEBIDODataGridViewTextBoxColumn.Width = 93;
+            // 
+            // pROPRIETARIODataGridViewTextBoxColumn
+            // 
+            this.pROPRIETARIODataGridViewTextBoxColumn.DataPropertyName = "PROPRIETARIO";
+            this.pROPRIETARIODataGridViewTextBoxColumn.HeaderText = "PROPRIETARIO";
+            this.pROPRIETARIODataGridViewTextBoxColumn.Name = "pROPRIETARIODataGridViewTextBoxColumn";
+            this.pROPRIETARIODataGridViewTextBoxColumn.Width = 120;
+            // 
+            // eNDERECODataGridViewTextBoxColumn
+            // 
+            this.eNDERECODataGridViewTextBoxColumn.DataPropertyName = "ENDERECO";
+            this.eNDERECODataGridViewTextBoxColumn.HeaderText = "ENDERECO";
+            this.eNDERECODataGridViewTextBoxColumn.Name = "eNDERECODataGridViewTextBoxColumn";
+            this.eNDERECODataGridViewTextBoxColumn.Width = 99;
+            // 
+            // dESCRICAODataGridViewTextBoxColumn
+            // 
+            this.dESCRICAODataGridViewTextBoxColumn.DataPropertyName = "DESCRICAO";
+            this.dESCRICAODataGridViewTextBoxColumn.HeaderText = "DESCRICAO";
+            this.dESCRICAODataGridViewTextBoxColumn.Name = "dESCRICAODataGridViewTextBoxColumn";
+            // 
+            // cODIGODataGridViewTextBoxColumn
+            // 
+            this.cODIGODataGridViewTextBoxColumn.DataPropertyName = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.HeaderText = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.Name = "cODIGODataGridViewTextBoxColumn";
+            this.cODIGODataGridViewTextBoxColumn.Width = 78;
             // 
             // mostrarCadastroBindingSource1
             // 
@@ -383,50 +424,9 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            
+            this.tableAdapterManager.CADASTROvisit_LogTableAdapter = null;
             this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // iDDataGridViewTextBoxColumn2
-            // 
-            this.iDDataGridViewTextBoxColumn2.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn2.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn2.Name = "iDDataGridViewTextBoxColumn2";
-            this.iDDataGridViewTextBoxColumn2.Width = 43;
-            // 
-            // rECEBIDODataGridViewTextBoxColumn
-            // 
-            this.rECEBIDODataGridViewTextBoxColumn.DataPropertyName = "RECEBIDO";
-            this.rECEBIDODataGridViewTextBoxColumn.HeaderText = "RECEBIDO";
-            this.rECEBIDODataGridViewTextBoxColumn.Name = "rECEBIDODataGridViewTextBoxColumn";
-            this.rECEBIDODataGridViewTextBoxColumn.Width = 93;
-            // 
-            // pROPRIETARIODataGridViewTextBoxColumn
-            // 
-            this.pROPRIETARIODataGridViewTextBoxColumn.DataPropertyName = "PROPRIETARIO";
-            this.pROPRIETARIODataGridViewTextBoxColumn.HeaderText = "PROPRIETARIO";
-            this.pROPRIETARIODataGridViewTextBoxColumn.Name = "pROPRIETARIODataGridViewTextBoxColumn";
-            this.pROPRIETARIODataGridViewTextBoxColumn.Width = 120;
-            // 
-            // eNDERECODataGridViewTextBoxColumn
-            // 
-            this.eNDERECODataGridViewTextBoxColumn.DataPropertyName = "ENDERECO";
-            this.eNDERECODataGridViewTextBoxColumn.HeaderText = "ENDERECO";
-            this.eNDERECODataGridViewTextBoxColumn.Name = "eNDERECODataGridViewTextBoxColumn";
-            this.eNDERECODataGridViewTextBoxColumn.Width = 99;
-            // 
-            // dESCRICAODataGridViewTextBoxColumn
-            // 
-            this.dESCRICAODataGridViewTextBoxColumn.DataPropertyName = "DESCRICAO";
-            this.dESCRICAODataGridViewTextBoxColumn.HeaderText = "DESCRICAO";
-            this.dESCRICAODataGridViewTextBoxColumn.Name = "dESCRICAODataGridViewTextBoxColumn";
-            // 
-            // cODIGODataGridViewTextBoxColumn
-            // 
-            this.cODIGODataGridViewTextBoxColumn.DataPropertyName = "CODIGO";
-            this.cODIGODataGridViewTextBoxColumn.HeaderText = "CODIGO";
-            this.cODIGODataGridViewTextBoxColumn.Name = "cODIGODataGridViewTextBoxColumn";
-            this.cODIGODataGridViewTextBoxColumn.Width = 78;
             // 
             // FormListaClientes
             // 

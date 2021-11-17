@@ -54,8 +54,8 @@ namespace COMPLETE_FLAT_UI
         {
 
 
-             cADASTROBindingSource2.Filter = null;
-            this.cADASTROTableAdapter2.Fill(this.bancoLocalhost.CADASTRO);
+           mostrarCadastroBindingSource1.Filter = null;
+            this.mostrarCadastroTableAdapter1.Fill(this.bancoBandB.MostrarCadastro);
 
             if (txtPesquisa.CanSelect)
             {
@@ -138,13 +138,13 @@ namespace COMPLETE_FLAT_UI
             sb.AppendFormat("OR(PROPRIETARIO LIKE'*" + "{0}" + "*')", strpesquisa);
 
             string strfilter = sb.ToString();
-            cADASTROBindingSource2.Filter = strfilter;
+            mostrarCadastroBindingSource1.Filter = strfilter;
 
-            if (cADASTROBindingSource2.Count != 0)
+            if (mostrarCadastroBindingSource1.Count != 0)
 
             {
 
-                dataGridView1.DataSource = cADASTROBindingSource2;
+                dataGridView1.DataSource = mostrarCadastroBindingSource1;
             }
 
             else
