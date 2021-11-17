@@ -39,7 +39,9 @@ namespace COMPLETE_FLAT_UI
 
         private void FormFuncionario_Load(object sender, EventArgs e)
         {
-           
+            // TODO: This line of code loads data into the 'bancoBandB.CADASTRO_Log' table. You can move, or remove it, as needed.
+            this.cADASTRO_LogTableAdapter.Fill(this.bancoBandB.CADASTRO_Log);
+
 
 
         }
@@ -97,6 +99,14 @@ namespace COMPLETE_FLAT_UI
         private void btnSavePdf_Click(object sender, EventArgs e)
         {
             exportarPdf(cADASTRO_LogDataGridView, "Encomendas");
+        }
+
+        private void cADASTRO_LogBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.cADASTRO_LogBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bancoBandB);
+
         }
     }
 }
