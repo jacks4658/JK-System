@@ -41,9 +41,12 @@ namespace COMPLETE_FLAT_UI
             this.txtVaga = new System.Windows.Forms.TextBox();
             this.txtTel2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxRg = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textPerfil = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtmorador = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,15 +58,12 @@ namespace COMPLETE_FLAT_UI
             this.txtendereco = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.BarraTituloViitante = new System.Windows.Forms.Panel();
-            this.textBoxRg = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.BarraTituloViitante.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -125,11 +125,11 @@ namespace COMPLETE_FLAT_UI
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(37, 24);
+            this.label9.Location = new System.Drawing.Point(27, 24);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 17);
+            this.label9.Size = new System.Drawing.Size(93, 17);
             this.label9.TabIndex = 39;
-            this.label9.Text = "Liberados";
+            this.label9.Text = "Dependentes";
             // 
             // textAp
             // 
@@ -219,6 +219,31 @@ namespace COMPLETE_FLAT_UI
             this.panel1.Size = new System.Drawing.Size(1106, 126);
             this.panel1.TabIndex = 53;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(42, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 17);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "RG";
+            // 
+            // textBoxRg
+            // 
+            this.textBoxRg.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBoxRg.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.textBoxRg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRg.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.textBoxRg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRg.Location = new System.Drawing.Point(125, 8);
+            this.textBoxRg.Name = "textBoxRg";
+            this.textBoxRg.Size = new System.Drawing.Size(167, 23);
+            this.textBoxRg.TabIndex = 51;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -253,6 +278,16 @@ namespace COMPLETE_FLAT_UI
             this.label2.Size = new System.Drawing.Size(61, 17);
             this.label2.TabIndex = 24;
             this.label2.Text = "Morador";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::COMPLETE_FLAT_UI.Properties.Resources.icono_cliente;
+            this.pictureBox1.Location = new System.Drawing.Point(883, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(138, 112);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
             // 
             // txtmorador
             // 
@@ -535,31 +570,6 @@ namespace COMPLETE_FLAT_UI
             this.BarraTituloViitante.Size = new System.Drawing.Size(1102, 38);
             this.BarraTituloViitante.TabIndex = 42;
             // 
-            // textBoxRg
-            // 
-            this.textBoxRg.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBoxRg.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.textBoxRg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxRg.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBoxRg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRg.Location = new System.Drawing.Point(125, 8);
-            this.textBoxRg.Name = "textBoxRg";
-            this.textBoxRg.Size = new System.Drawing.Size(167, 23);
-            this.textBoxRg.TabIndex = 51;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(42, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 17);
-            this.label4.TabIndex = 52;
-            this.label4.Text = "RG";
-            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -572,16 +582,6 @@ namespace COMPLETE_FLAT_UI
             this.button1.Size = new System.Drawing.Size(38, 38);
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::COMPLETE_FLAT_UI.Properties.Resources.icono_cliente;
-            this.pictureBox1.Location = new System.Drawing.Point(883, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 112);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
             // 
             // Morador
             // 
@@ -604,11 +604,11 @@ namespace COMPLETE_FLAT_UI
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.BarraTituloViitante.ResumeLayout(false);
             this.BarraTituloViitante.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

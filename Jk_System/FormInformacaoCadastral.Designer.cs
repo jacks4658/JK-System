@@ -59,11 +59,10 @@
             this.cADASTROVISITANTEBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tableAdapterManager = new COMPLETE_FLAT_UI.BancoLocalhostTableAdapters.TableAdapterManager();
             this.cADASTRO_VISITANTEDataGridView = new System.Windows.Forms.DataGridView();
-            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.mostrarCadastroVisitanteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.mostrarCadastroVisitanteTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroVisitanteTableAdapter();
             this.tableAdapterManager1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
-            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nOMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pLACADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,8 +82,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroVisitanteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_VISITANTEDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroVisitanteBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPesquisa
@@ -328,7 +327,6 @@
             this.cADASTRO_VISITANTEDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.cADASTRO_VISITANTEDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cADASTRO_VISITANTEDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn1,
             this.nOMEDataGridViewTextBoxColumn,
             this.rGDataGridViewTextBoxColumn,
             this.pLACADataGridViewTextBoxColumn,
@@ -369,15 +367,15 @@
             this.cADASTRO_VISITANTEDataGridView.Size = new System.Drawing.Size(925, 541);
             this.cADASTRO_VISITANTEDataGridView.TabIndex = 19;
             // 
-            // bancoBandB
-            // 
-            this.bancoBandB.DataSetName = "BancoBandB";
-            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // mostrarCadastroVisitanteBindingSource1
             // 
             this.mostrarCadastroVisitanteBindingSource1.DataMember = "MostrarCadastroVisitante";
             this.mostrarCadastroVisitanteBindingSource1.DataSource = this.bancoBandB;
+            // 
+            // bancoBandB
+            // 
+            this.bancoBandB.DataSetName = "BancoBandB";
+            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // mostrarCadastroVisitanteTableAdapter1
             // 
@@ -386,15 +384,10 @@
             // tableAdapterManager1
             // 
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-         
+            this.tableAdapterManager1.CADASTRO_LogTableAdapter = null;
+            this.tableAdapterManager1.CADASTROvisit_LogTableAdapter = null;
             this.tableAdapterManager1.Connection = null;
             this.tableAdapterManager1.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // iDDataGridViewTextBoxColumn1
-            // 
-            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
             // 
             // nOMEDataGridViewTextBoxColumn
             // 
@@ -479,8 +472,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroVisitanteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_VISITANTEDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroVisitanteBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -517,7 +510,6 @@
         private System.Windows.Forms.BindingSource mostrarCadastroVisitanteBindingSource1;
         private BancoBandBTableAdapters.MostrarCadastroVisitanteTableAdapter mostrarCadastroVisitanteTableAdapter1;
         private BancoBandBTableAdapters.TableAdapterManager tableAdapterManager1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nOMEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn rGDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pLACADataGridViewTextBoxColumn;

@@ -31,35 +31,32 @@
             this.components = new System.ComponentModel.Container();
             this.tableAdapterManager2 = new COMPLETE_FLAT_UI.BancoDataSetTableAdapters.TableAdapterManager();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cADASTRO_LogDataGridView = new System.Windows.Forms.DataGridView();
+            this.cADASTROLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.cADASTRO_LogTableAdapter4 = new COMPLETE_FLAT_UI.BancoLocalhostTableAdapters.CADASTRO_LogTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSavePdf = new System.Windows.Forms.Button();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mostrarCadastroTableAdapter = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroTableAdapter();
-            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.cADASTRO_LogBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cADASTRO_LogTableAdapter = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.CADASTRO_LogTableAdapter();
             this.tableAdapterManager = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
-            this.cADASTRO_LogDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cADASTROLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_LogBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_LogDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROLogBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_LogBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableAdapterManager2
@@ -84,6 +81,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1098, 500);
             this.panel1.TabIndex = 24;
+            // 
+            // cADASTRO_LogDataGridView
+            // 
+            this.cADASTRO_LogDataGridView.AllowUserToAddRows = false;
+            this.cADASTRO_LogDataGridView.AllowUserToDeleteRows = false;
+            this.cADASTRO_LogDataGridView.AutoGenerateColumns = false;
+            this.cADASTRO_LogDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.cADASTRO_LogDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.cADASTRO_LogDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn2});
+            this.cADASTRO_LogDataGridView.DataSource = this.cADASTROLogBindingSource;
+            this.cADASTRO_LogDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.cADASTRO_LogDataGridView.Name = "cADASTRO_LogDataGridView";
+            this.cADASTRO_LogDataGridView.ReadOnly = true;
+            this.cADASTRO_LogDataGridView.Size = new System.Drawing.Size(1092, 437);
+            this.cADASTRO_LogDataGridView.TabIndex = 0;
+            // 
+            // cADASTROLogBindingSource
+            // 
+            this.cADASTROLogBindingSource.DataMember = "CADASTRO_Log";
+            this.cADASTROLogBindingSource.DataSource = this.bancoBandB;
+            // 
+            // bancoBandB
+            // 
+            this.bancoBandB.DataSetName = "BancoBandB";
+            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cADASTRO_LogTableAdapter4
             // 
@@ -155,11 +185,6 @@
             // 
             this.mostrarCadastroTableAdapter.ClearBeforeFill = true;
             // 
-            // bancoBandB
-            // 
-            this.bancoBandB.DataSetName = "BancoBandB";
-            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // cADASTRO_LogBindingSource
             // 
             this.cADASTRO_LogBindingSource.DataMember = "CADASTRO_Log";
@@ -176,102 +201,61 @@
             this.tableAdapterManager.CADASTROvisit_LogTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // cADASTRO_LogDataGridView
-            // 
-            this.cADASTRO_LogDataGridView.AllowUserToAddRows = false;
-            this.cADASTRO_LogDataGridView.AllowUserToDeleteRows = false;
-            this.cADASTRO_LogDataGridView.AutoGenerateColumns = false;
-            this.cADASTRO_LogDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.cADASTRO_LogDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.cADASTRO_LogDataGridView.DataSource = this.cADASTROLogBindingSource;
-            this.cADASTRO_LogDataGridView.Location = new System.Drawing.Point(3, 3);
-            this.cADASTRO_LogDataGridView.Name = "cADASTRO_LogDataGridView";
-            this.cADASTRO_LogDataGridView.ReadOnly = true;
-            this.cADASTRO_LogDataGridView.Size = new System.Drawing.Size(1092, 437);
-            this.cADASTRO_LogDataGridView.TabIndex = 0;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id_LOG";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id_LOG";
+            this.dataGridViewTextBoxColumn1.HeaderText = "QUANTIDADE";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Dt_Atualizacao";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Dt_Atualizacao";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Login";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Login";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Hostname";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Hostname";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ACAO";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ACAO";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "RECEBIDO";
             this.dataGridViewTextBoxColumn7.HeaderText = "RECEBIDO";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "CODIGO";
             this.dataGridViewTextBoxColumn8.HeaderText = "CODIGO";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "ENDERECO";
             this.dataGridViewTextBoxColumn9.HeaderText = "ENDERECO";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.DataPropertyName = "DESCRICAO";
             this.dataGridViewTextBoxColumn10.HeaderText = "DESCRICAO";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.DataPropertyName = "PROPRIETARIO";
             this.dataGridViewTextBoxColumn11.HeaderText = "PROPRIETARIO";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
             // 
-            // cADASTROLogBindingSource
+            // dataGridViewTextBoxColumn5
             // 
-            this.cADASTROLogBindingSource.DataMember = "CADASTRO_Log";
-            this.cADASTROLogBindingSource.DataSource = this.bancoBandB;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ACAO";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ACAO";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Dt_Atualizacao";
+            this.dataGridViewTextBoxColumn2.HeaderText = "DATA";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // FormHistrorico
             // 
@@ -285,12 +269,12 @@
             this.Text = "Historico";
             this.Load += new System.EventHandler(this.FormFuncionario_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_LogBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_LogDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROLogBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_LogBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -310,17 +294,14 @@
         private BancoBandBTableAdapters.CADASTRO_LogTableAdapter cADASTRO_LogTableAdapter;
         private BancoBandBTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView cADASTRO_LogDataGridView;
+        private System.Windows.Forms.BindingSource cADASTROLogBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.BindingSource cADASTROLogBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }
