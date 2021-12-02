@@ -63,6 +63,7 @@
             this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.mostrarCadastroVisitanteTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroVisitanteTableAdapter();
             this.tableAdapterManager1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nOMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pLACADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -327,6 +328,7 @@
             this.cADASTRO_VISITANTEDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.cADASTRO_VISITANTEDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.cADASTRO_VISITANTEDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
             this.nOMEDataGridViewTextBoxColumn,
             this.rGDataGridViewTextBoxColumn,
             this.pLACADataGridViewTextBoxColumn,
@@ -388,6 +390,12 @@
             this.tableAdapterManager1.CADASTROvisit_LogTableAdapter = null;
             this.tableAdapterManager1.Connection = null;
             this.tableAdapterManager1.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "ID";
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
             // 
             // nOMEDataGridViewTextBoxColumn
             // 
@@ -510,6 +518,7 @@
         private System.Windows.Forms.BindingSource mostrarCadastroVisitanteBindingSource1;
         private BancoBandBTableAdapters.MostrarCadastroVisitanteTableAdapter mostrarCadastroVisitanteTableAdapter1;
         private BancoBandBTableAdapters.TableAdapterManager tableAdapterManager1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nOMEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn rGDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pLACADataGridViewTextBoxColumn;

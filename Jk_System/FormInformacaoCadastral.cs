@@ -160,7 +160,7 @@ namespace COMPLETE_FLAT_UI
 
             if (cADASTRO_VISITANTEDataGridView.SelectedRows.Count > 0)
             {
-                id = cADASTRO_VISITANTEDataGridView.CurrentRow.Cells[1].Value.ToString();
+                id = cADASTRO_VISITANTEDataGridView.CurrentRow.Cells[0].Value.ToString();
                 objetoCN.EliminarPRod(id);
                 MessageBox.Show("VISITANTE SAIU");
                 MostrarProdctos();
