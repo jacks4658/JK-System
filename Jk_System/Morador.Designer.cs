@@ -303,6 +303,7 @@ namespace COMPLETE_FLAT_UI
             this.txtmorador.Name = "txtmorador";
             this.txtmorador.Size = new System.Drawing.Size(535, 23);
             this.txtmorador.TabIndex = 20;
+            this.txtmorador.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtmorador_KeyDown);
             // 
             // panel2
             // 
@@ -603,6 +604,7 @@ namespace COMPLETE_FLAT_UI
             this.Name = "Morador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Morador";
+            this.Load += new System.EventHandler(this.Morador_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);

@@ -182,7 +182,73 @@ namespace COMPLETE_FLAT_UI
                 textTel1.Text = (string)dr["TELEFONE_01"];
 
             }
+
+
+        }
+
+
+
+
+        private void Morador_Load(object sender, EventArgs e)
+        {
+
+
+            SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
+            //inserção sql
+
+
+            SqlCommand c = new SqlCommand("SELECT [MORADOR] FROM [dbo].[MORADOR]", conexao);
+
+
+            conexao.Open();
+            c.ExecuteNonQuery();
+            SqlDataReader sdr = c.ExecuteReader();
+            AutoCompleteStringCollection complete = new AutoCompleteStringCollection();
+         
+
+            while (sdr.Read())
+            {
+                complete.Add(sdr.GetString(0));
+               
+
+            }
+
+            txtmorador.AutoCompleteCustomSource = complete;
+          
+
+            conexao.Close();
+        }
+
+        private void txtmorador_KeyDown(object sender, KeyEventArgs e)
+        {
+            SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
+            //inserção sql
+
+
+
+
+            SqlCommand c = new SqlCommand("SELECT * FROM [dbo].[MORADOR] WHERE MORADOR= @MORADOR", conexao);
+
+            c.Parameters.AddWithValue("@MORADOR", txtmorador.Text);
+            conexao.Open();
+            dr = c.ExecuteReader();
+
+            while (dr.Read())
+            {
+                txtmorador.Text = (string)dr["morador"];
+                textBoxRg.Text = (string)dr["rg"];
+                textVeiculos.Text = (string)dr["VEICULOS"];
+                txtTel2.Text = (string)dr["TELEFONE_02"];
+                txtVaga.Text = (string)dr["VAGA"];
+                txtNomeLiberado.Text = (string)dr["LIBERADOS"];
+                textAp.Text = (string)dr["BLOCO_AP"];
+                textPerfil.Text = (string)dr["PERFIL"];
+                textTel1.Text = (string)dr["TELEFONE_01"];
+
+            }
+
         }
     }
-}
+    }
+
 
