@@ -113,9 +113,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(3, 434);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 15);
+            this.label1.Size = new System.Drawing.Size(252, 15);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Licenciado Cliente Villagio Jaguari";
+            this.label1.Text = "Licenciado Cliente Soleil Residencial Resort ";
             // 
             // Formvindo
             // 

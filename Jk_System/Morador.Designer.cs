@@ -142,6 +142,7 @@ namespace COMPLETE_FLAT_UI
             this.textAp.Name = "textAp";
             this.textAp.Size = new System.Drawing.Size(112, 22);
             this.textAp.TabIndex = 48;
+            this.textAp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textAp_KeyDown);
             // 
             // label13
             // 
@@ -152,7 +153,7 @@ namespace COMPLETE_FLAT_UI
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(64, 17);
             this.label13.TabIndex = 48;
-            this.label13.Text = "Bloco/Ap";
+            this.label13.Text = "Torre/Ap";
             // 
             // textQuadraVisitado
             // 
@@ -188,6 +189,7 @@ namespace COMPLETE_FLAT_UI
             this.txtVaga.Name = "txtVaga";
             this.txtVaga.Size = new System.Drawing.Size(112, 23);
             this.txtVaga.TabIndex = 48;
+            this.txtVaga.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtVaga_KeyDown);
             // 
             // txtTel2
             // 
@@ -243,6 +245,7 @@ namespace COMPLETE_FLAT_UI
             this.textBoxRg.Name = "textBoxRg";
             this.textBoxRg.Size = new System.Drawing.Size(167, 23);
             this.textBoxRg.TabIndex = 51;
+            this.textBoxRg.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxRg_KeyDown);
             // 
             // label11
             // 
