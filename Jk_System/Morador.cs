@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +23,19 @@ namespace COMPLETE_FLAT_UI
         {
             InitializeComponent();
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+    
+
 
         private void bntEnviarMoador_Click(object sender, EventArgs e)
         {
@@ -191,12 +205,10 @@ namespace COMPLETE_FLAT_UI
 
         private void Morador_Load(object sender, EventArgs e)
         {
-
+            //SETOR DO AUTOCOMPLETE DO NOME
 
             SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
             //inserção sql
-
-
             SqlCommand c = new SqlCommand("SELECT [MORADOR] FROM [dbo].[MORADOR]", conexao);
 
 
@@ -223,10 +235,6 @@ namespace COMPLETE_FLAT_UI
         {
             SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
             //inserção sql
-
-
-
-
             SqlCommand c = new SqlCommand("SELECT * FROM [dbo].[MORADOR] WHERE MORADOR= @MORADOR", conexao);
 
             c.Parameters.AddWithValue("@MORADOR", txtmorador.Text);
@@ -247,6 +255,13 @@ namespace COMPLETE_FLAT_UI
 
             }
 
+        }
+
+        private void BarraTituloViitante_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
     }

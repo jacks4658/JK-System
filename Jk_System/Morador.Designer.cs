@@ -103,7 +103,7 @@ namespace COMPLETE_FLAT_UI
             this.bntEnviarMoador.Name = "bntEnviarMoador";
             this.bntEnviarMoador.Size = new System.Drawing.Size(120, 35);
             this.bntEnviarMoador.TabIndex = 40;
-            this.bntEnviarMoador.Text = "CADASTRAR";
+            this.bntEnviarMoador.Text = "ATUALIZAR";
             this.bntEnviarMoador.UseVisualStyleBackColor = false;
             this.bntEnviarMoador.Click += new System.EventHandler(this.bntEnviarMoador_Click);
             // 
@@ -573,6 +573,7 @@ namespace COMPLETE_FLAT_UI
             this.BarraTituloViitante.Name = "BarraTituloViitante";
             this.BarraTituloViitante.Size = new System.Drawing.Size(1102, 38);
             this.BarraTituloViitante.TabIndex = 42;
+            this.BarraTituloViitante.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTituloViitante_MouseDown);
             // 
             // button1
             // 

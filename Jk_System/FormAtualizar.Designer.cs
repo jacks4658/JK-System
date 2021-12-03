@@ -206,9 +206,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 134);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 17);
+            this.label1.Size = new System.Drawing.Size(82, 17);
             this.label1.TabIndex = 31;
-            this.label1.Text = "Codigo:";
+            this.label1.Text = "Proprietario";
             // 
             // label3
             // 
@@ -217,9 +217,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 163);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 17);
+            this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 32;
-            this.label3.Text = "Proprietario:";
+            this.label3.Text = "Descrição";
             // 
             // label7
             // 
@@ -228,9 +228,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(12, 192);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 17);
+            this.label7.Size = new System.Drawing.Size(52, 17);
             this.label7.TabIndex = 33;
-            this.label7.Text = "Endereço";
+            this.label7.Text = "Codigo";
             // 
             // label8
             // 
@@ -239,9 +239,9 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(12, 217);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 17);
+            this.label8.Size = new System.Drawing.Size(69, 17);
             this.label8.TabIndex = 34;
-            this.label8.Text = "Descrição:";
+            this.label8.Text = "Endereço";
             // 
             // FormAtualizar
             // 

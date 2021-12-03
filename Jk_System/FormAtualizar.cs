@@ -44,7 +44,7 @@ namespace COMPLETE_FLAT_UI
 
 
         #region CONEXAO/E ENVIO DE DADOS
-         SqlConnection conexao = new SqlConnection("Server=DESKTOP-C6NHVB9\\SQLEXPRESS;Integrated Security=true;Initial Catalog=Banco;");
+        SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
 
         String Sql = "update cadastro set recebido=@recebido, codigo=@codigo, endereco=@endereco, descricao=@descricao, proprietario=@proprietario where Id=@id";
 
@@ -62,15 +62,14 @@ namespace COMPLETE_FLAT_UI
 
                 c.Parameters.Add(new SqlParameter("@RECEBIDO", this.txtnome.Text));
                 txtnome.Clear();
-                c.Parameters.Add(new SqlParameter("@DESCRICAO", this.txtdescricao.Text));
-                txtdescricao.Clear();
                 c.Parameters.Add(new SqlParameter("@CODIGO", this.txtcodigo.Text));
                 txtcodigo.Clear();
-                c.Parameters.Add(new SqlParameter("@PROPRIETARIO", this.txtproprietario.Text));
-                txtproprietario.Clear();
-
                 c.Parameters.Add(new SqlParameter("@ENDERECO", this.txtendereco.Text));
                 txtendereco.Clear();
+                c.Parameters.Add(new SqlParameter("@DESCRICAO", this.txtdescricao.Text));
+                txtdescricao.Clear();
+                c.Parameters.Add(new SqlParameter("@PROPRIETARIO", this.txtproprietario.Text));
+                txtproprietario.Clear();
               
 
 

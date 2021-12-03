@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,15 @@ namespace COMPLETE_FLAT_UI
         {
             InitializeComponent();
         }
+
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
+
+
 
         private void bntEnviarDb_Click(object sender, EventArgs e)
         {
@@ -119,23 +129,70 @@ namespace COMPLETE_FLAT_UI
             SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
             //inserção sql
 
+            //inserção sql
+            SqlCommand c = new SqlCommand("SELECT [NOME] FROM [dbo].[CADASTROvisit_Log]", conexao);
 
 
+            conexao.Open();
+            c.ExecuteNonQuery();
+            SqlDataReader sdr = c.ExecuteReader();
+            AutoCompleteStringCollection complete = new AutoCompleteStringCollection();
 
 
+            while (sdr.Read())
+            {
+                complete.Add(sdr.GetString(0));
+
+
+            }
+
+            txtnome.AutoCompleteCustomSource = complete;
 
 
             conexao.Close();
-        }
+        
+
+
+
+
+
+    }
 
         private void txtnome_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                txtrg.Focus();
 
+            SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
+            //inserção sql
+
+
+
+
+            SqlCommand c = new SqlCommand("SELECT * FROM [dbo].[CADASTROvisit_Log] WHERE NOME= @NOME", conexao);
+
+            c.Parameters.AddWithValue("@NOME", txtnome.Text);
+            conexao.Open();
+            dr = c.ExecuteReader();
+
+            while (dr.Read())
+            {
+                txtnome.Text = (string)dr["nome"];
+                txtrg.Text = (string)dr["rg"];
+                txtcor.Text = (string)dr["cor"];
+                txtendereco.Text = (string)dr["placa"];
+                txtdescricao.Text = (string)dr["modelo"];
+                txtObersevacao.Text = (string)dr["rua"];
+
+
+                if (e.KeyCode == Keys.Enter)
+                {
+                    txtNomeVisitado.Focus();
+
+                }
             }
         }
+
+
+            
 
         private void txtrg_KeyDown(object sender, KeyEventArgs e)
         {
@@ -245,6 +302,13 @@ namespace COMPLETE_FLAT_UI
             {
                 Close();
             }
+        }
+
+        private void BarraTituloViitante_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

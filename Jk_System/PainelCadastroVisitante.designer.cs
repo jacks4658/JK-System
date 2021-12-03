@@ -277,6 +277,7 @@
             this.BarraTituloViitante.Name = "BarraTituloViitante";
             this.BarraTituloViitante.Size = new System.Drawing.Size(1107, 38);
             this.BarraTituloViitante.TabIndex = 35;
+            this.BarraTituloViitante.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTituloViitante_MouseDown);
             // 
             // label6
             // 
