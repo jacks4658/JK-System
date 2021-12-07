@@ -166,6 +166,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BancoVisitante.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Chave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chave.Designer.cs">
+      <DependentUpon>Chave.cs</DependentUpon>
+    </Compile>
     <Compile Include="Encomenda.cs" />
     <Compile Include="FormAtualizar.cs">
       <SubType>Form</SubType>
@@ -233,6 +239,18 @@
     <Compile Include="HistoricoVisitante.Designer.cs">
       <DependentUpon>HistoricoVisitante.cs</DependentUpon>
     </Compile>
+    <Compile Include="Historico_Chaves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historico_Chaves.Designer.cs">
+      <DependentUpon>Historico_Chaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaChavesRetiradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaChavesRetiradas.Designer.cs">
+      <DependentUpon>ListaChavesRetiradas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -259,6 +277,9 @@
     <Compile Include="RegistrationForm.designer.cs">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Chave.resx">
+      <DependentUpon>Chave.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAtualizar.resx">
       <DependentUpon>FormAtualizar.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,6 +312,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HistoricoVisitante.resx">
       <DependentUpon>HistoricoVisitante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historico_Chaves.resx">
+      <DependentUpon>Historico_Chaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaChavesRetiradas.resx">
+      <DependentUpon>ListaChavesRetiradas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Morador.resx">
       <DependentUpon>Morador.cs</DependentUpon>
