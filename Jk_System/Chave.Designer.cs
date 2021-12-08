@@ -50,7 +50,7 @@
             // 
             this.txtTorre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtTorre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTorre.Location = new System.Drawing.Point(210, 183);
+            this.txtTorre.Location = new System.Drawing.Point(159, 150);
             this.txtTorre.Name = "txtTorre";
             this.txtTorre.Size = new System.Drawing.Size(244, 23);
             this.txtTorre.TabIndex = 34;
@@ -60,7 +60,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(81, 239);
+            this.label8.Location = new System.Drawing.Point(30, 206);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(103, 17);
             this.label8.TabIndex = 33;
@@ -70,7 +70,7 @@
             // 
             this.txtObservacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtObservacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObservacao.Location = new System.Drawing.Point(210, 212);
+            this.txtObservacao.Location = new System.Drawing.Point(159, 179);
             this.txtObservacao.Multiline = true;
             this.txtObservacao.Name = "txtObservacao";
             this.txtObservacao.Size = new System.Drawing.Size(244, 57);
@@ -81,7 +81,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(80, 190);
+            this.label7.Location = new System.Drawing.Point(29, 157);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 17);
             this.label7.TabIndex = 31;
@@ -94,7 +94,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.Location = new System.Drawing.Point(354, 296);
+            this.btnCancelar.Location = new System.Drawing.Point(303, 263);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 35);
             this.btnCancelar.TabIndex = 27;
@@ -108,7 +108,7 @@
             this.bntChaveEnviarDb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntChaveEnviarDb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntChaveEnviarDb.ForeColor = System.Drawing.Color.Black;
-            this.bntChaveEnviarDb.Location = new System.Drawing.Point(210, 296);
+            this.bntChaveEnviarDb.Location = new System.Drawing.Point(159, 263);
             this.bntChaveEnviarDb.Name = "bntChaveEnviarDb";
             this.bntChaveEnviarDb.Size = new System.Drawing.Size(100, 35);
             this.bntChaveEnviarDb.TabIndex = 26;
@@ -121,7 +121,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(81, 161);
+            this.label3.Location = new System.Drawing.Point(30, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 17);
             this.label3.TabIndex = 25;
@@ -132,7 +132,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(81, 132);
+            this.label1.Location = new System.Drawing.Point(30, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 17);
             this.label1.TabIndex = 24;
@@ -143,7 +143,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(82, 103);
+            this.label2.Location = new System.Drawing.Point(31, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 17);
             this.label2.TabIndex = 23;
@@ -155,7 +155,7 @@
             this.txtChave.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtChave.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtChave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtChave.Location = new System.Drawing.Point(210, 154);
+            this.txtChave.Location = new System.Drawing.Point(159, 121);
             this.txtChave.Name = "txtChave";
             this.txtChave.Size = new System.Drawing.Size(244, 23);
             this.txtChave.TabIndex = 22;
@@ -166,7 +166,7 @@
             this.txtMorador.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
             this.txtMorador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtMorador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMorador.Location = new System.Drawing.Point(210, 125);
+            this.txtMorador.Location = new System.Drawing.Point(159, 92);
             this.txtMorador.Name = "txtMorador";
             this.txtMorador.Size = new System.Drawing.Size(244, 23);
             this.txtMorador.TabIndex = 21;
@@ -177,7 +177,7 @@
             this.txtAgente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystem;
             this.txtAgente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtAgente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAgente.Location = new System.Drawing.Point(210, 96);
+            this.txtAgente.Location = new System.Drawing.Point(159, 63);
             this.txtAgente.Name = "txtAgente";
             this.txtAgente.Size = new System.Drawing.Size(244, 23);
             this.txtAgente.TabIndex = 20;

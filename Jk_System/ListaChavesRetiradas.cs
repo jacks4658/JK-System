@@ -52,7 +52,7 @@ namespace COMPLETE_FLAT_UI
         private void delete_Click(object sender, EventArgs e)
         {
             if
-                            (MessageBox.Show("QUER REALMENTE DA BAIXA NESSA ENCOMENDA?  ", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+                            (MessageBox.Show("FINALIZAR ENTREGA DA CHAVE?  ", "ATENÇÃO", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
             {
 
                 RefreshData();
@@ -64,12 +64,18 @@ namespace COMPLETE_FLAT_UI
             {
                 id = mostrarChaveDataGridView.CurrentRow.Cells[0].Value.ToString();
                 objetoCN.EliminarChave(id);
-                MessageBox.Show("ENCOMENDA ENTREGUE");
+                MessageBox.Show("CHAVE ENTREGUE");
                 RefreshData();
 
             }
             else
-                MessageBox.Show("SELECIONE A LINHA DA ENCOMENDA");
+                MessageBox.Show("SELECIONE A LINHA ");
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            Chave chrm = new Chave();
+            chrm.ShowDialog();
         }
     }
     }

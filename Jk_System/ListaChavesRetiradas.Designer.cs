@@ -41,6 +41,7 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delete = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarChaveBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarChaveDataGridView)).BeginInit();
@@ -83,7 +84,7 @@
             this.mostrarChaveDataGridView.DataSource = this.mostrarChaveBindingSource;
             this.mostrarChaveDataGridView.Location = new System.Drawing.Point(12, 28);
             this.mostrarChaveDataGridView.Name = "mostrarChaveDataGridView";
-            this.mostrarChaveDataGridView.Size = new System.Drawing.Size(702, 370);
+            this.mostrarChaveDataGridView.Size = new System.Drawing.Size(711, 457);
             this.mostrarChaveDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -134,24 +135,55 @@
             // 
             // delete
             // 
-            this.delete.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.delete.Location = new System.Drawing.Point(720, 63);
+            this.delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.delete.Location = new System.Drawing.Point(747, 64);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.Size = new System.Drawing.Size(100, 30);
             this.delete.TabIndex = 2;
-            this.delete.Text = "eliminar";
-            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Text = "FINALIZAR";
+            this.delete.UseVisualStyleBackColor = false;
             this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.ForeColor = System.Drawing.Color.Silver;
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo.Location = new System.Drawing.Point(747, 28);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(100, 30);
+            this.btnNuevo.TabIndex = 7;
+            this.btnNuevo.Text = "NOVO";
+            this.btnNuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // ListaChavesRetiradas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(859, 450);
+            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.mostrarChaveDataGridView);
             this.Name = "ListaChavesRetiradas";
+            this.Opacity = 0.98D;
+            this.ShowIcon = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListaChavesRetiradas";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ListaChavesRetiradas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarChaveBindingSource)).EndInit();
@@ -174,5 +206,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button btnNuevo;
     }
 }
