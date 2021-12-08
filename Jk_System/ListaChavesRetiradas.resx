@@ -129,6 +129,28 @@
   <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>543, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADoAAAAqCAYAAADibUizAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        xAAADsQBlSsOGwAAA31JREFUaEPtmb2qFTEUhaewsLDwDfQJLr6A4AMI2gk21ycQCxsrxUbBQjubC1rZ
+        ammlFhaKooIPoNjYCCqI4r/rmzMLQszcmcnkZDhwFyxOkjOTydp7ZyeZafZQDgfEg+K+tlYG9LV/VVwW
+        2+JL8W+CD8Xr4hExB+dE93WLhiVwWLTAt+Jt8VJA6rSHojHKWBAZ3PdIpC/KJ8WqYBBvxE8iVt8NGOSG
+        yLUMFuMcE4dAFHA9RkMg5TNiVdwVefCYARsYB6NYMH3Q1gdE/RK5FnLfbtcXBx7iwXgpBwyWe+mDqEjN
+        XwzI/6/FCyJe5blV4QSRm2AMxNi7YUjS70fxlVjVgzEei+9WxdlACIIQ6+yMSAxQ3YMxGMiHVbEIEOus
+        +l1E5NxoKQIGxGBKAmGIpO9rNCwNJwkGVQphuD4X6b/6MhIj3KmUQCiScjhnFw1f0ryFDm0UhhCLNBBL
+        G0vPYlk3FMoOJxd9Ig3vhHLX6tmwULLubxoyMCTS8KZiyu6rGCx0p/u9Ik7BWJHAIcxhoDqcjI53vwx6
+        LKaINGzY6lnYywsPvt+Vr4pDwDtTRRoc9UhM1YE4djKA08VP8VBbSwORJK4ckaDU3noyWOdsYeYog3jS
+        1v6HRXJN7qF57mkpG7aws+F7kXq8roYi586x0LjVYAs7fAlbQviPuEVDBy8PJRKJkxLGq4o7Ig8+2taa
+        5pRI/avo+YpBSs0rbyCqr6mXRR78rK2t4LU1FFsKzvZzt52TwXwhi8YPX5fYRYSGb+RSJ411iLXQqqF7
+        T8SbJAZImc1ASiwJivk7Fxi1qtA44wIEpsR6GYIPaJgBG7canObjbEr9m8h/4XLCcsNJh3ZCOWeOOWxD
+        464deI1PBCmcFxkQ5MQRvsXzcgTpY6xgDEjiY79bbQ31PIk3ACdEPgA5C3/ufiHt9j6Jia2i/2OP/EI8
+        K8bgnoti7kFgFvCS54nFMRAPnHnEwLkGb/oVJsQrvLflI9NpkZPPD9H/mySvsE70VBXpJMTeNRaHhx1W
+        9ro38NxHmHoZGuIX8alILqgq0AjnGGQgqTlDG//3JQ4SC8K538Q4tFebg31gAHgRSxNKFtv3vRMvc/3G
+        IRWOnEycfJh/JA5n2fj6jQHzkvQeA08jKpx/fPMk2VBe7FVlLhg0YYrX+nhTxCDeNLB0bFz42ls5XDzB
+        7GHz0TT/ANOAWN/VzHXMAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>

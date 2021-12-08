@@ -21,7 +21,7 @@ namespace COMPLETE_FLAT_UI
         CN_Productos objetoCN = new CN_Productos();
         object recebido = null; private string id = null;
         private bool atualizar = false;
-     
+
         public ListaChavesRetiradas()
         {
             InitializeComponent();
@@ -72,10 +72,14 @@ namespace COMPLETE_FLAT_UI
                 MessageBox.Show("SELECIONE A LINHA ");
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Chave chrm = new Chave();
-            chrm.ShowDialog();
+            this.Close();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
     }
