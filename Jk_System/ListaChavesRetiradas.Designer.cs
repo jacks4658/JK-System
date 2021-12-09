@@ -106,6 +106,11 @@
             this.mostrarChaveDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mostrarChaveDataGridView.Location = new System.Drawing.Point(3, 43);
             this.mostrarChaveDataGridView.Name = "mostrarChaveDataGridView";
+            this.mostrarChaveDataGridView.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.mostrarChaveDataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.mostrarChaveDataGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.mostrarChaveDataGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Yellow;
+            this.mostrarChaveDataGridView.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.mostrarChaveDataGridView.Size = new System.Drawing.Size(828, 457);
             this.mostrarChaveDataGridView.TabIndex = 1;
             // 
@@ -278,6 +283,7 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "NOVO";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ListaChavesRetiradas
             // 

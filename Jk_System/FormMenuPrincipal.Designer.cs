@@ -55,6 +55,8 @@
             this.tmExpandirMenu = new System.Windows.Forms.Timer(this.components);
             this.tmContraerMenu = new System.Windows.Forms.Timer(this.components);
             this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.button4 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panelContenedorPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -127,6 +129,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.panelMenu.Controls.Add(this.button4);
             this.panelMenu.Controls.Add(this.button2);
             this.panelMenu.Controls.Add(this.btnListaClientes);
             this.panelMenu.Controls.Add(this.SubmenuHistorico);
@@ -154,11 +157,11 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(-19, 253);
+            this.button2.Location = new System.Drawing.Point(-23, 180);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 50);
+            this.button2.Size = new System.Drawing.Size(254, 50);
             this.button2.TabIndex = 15;
-            this.button2.Text = "    Moradores";
+            this.button2.Text = "       Moradores";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -173,19 +176,20 @@
             this.btnListaClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListaClientes.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnListaClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnListaClientes.Image")));
-            this.btnListaClientes.Location = new System.Drawing.Point(-30, 137);
+            this.btnListaClientes.Location = new System.Drawing.Point(-27, 116);
             this.btnListaClientes.Name = "btnListaClientes";
             this.btnListaClientes.Size = new System.Drawing.Size(254, 50);
             this.btnListaClientes.TabIndex = 2;
-            this.btnListaClientes.Text = "  Encomendas";
+            this.btnListaClientes.Text = "    Encomendas";
             this.btnListaClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnListaClientes.UseVisualStyleBackColor = true;
             this.btnListaClientes.Click += new System.EventHandler(this.btnListaClientes_Click);
             // 
             // SubmenuHistorico
             // 
+            this.SubmenuHistorico.Controls.Add(this.button6);
             this.SubmenuHistorico.Controls.Add(this.HistoricoCadastro);
-            this.SubmenuHistorico.Location = new System.Drawing.Point(3, 406);
+            this.SubmenuHistorico.Location = new System.Drawing.Point(3, 453);
             this.SubmenuHistorico.Name = "SubmenuHistorico";
             this.SubmenuHistorico.Size = new System.Drawing.Size(221, 105);
             this.SubmenuHistorico.TabIndex = 14;
@@ -202,9 +206,9 @@
             this.HistoricoCadastro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.HistoricoCadastro.Location = new System.Drawing.Point(0, 3);
             this.HistoricoCadastro.Name = "HistoricoCadastro";
-            this.HistoricoCadastro.Size = new System.Drawing.Size(227, 50);
+            this.HistoricoCadastro.Size = new System.Drawing.Size(254, 50);
             this.HistoricoCadastro.TabIndex = 15;
-            this.HistoricoCadastro.Text = "            Entregas";
+            this.HistoricoCadastro.Text = "              Entregas";
             this.HistoricoCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.HistoricoCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.HistoricoCadastro.UseVisualStyleBackColor = true;
@@ -220,9 +224,9 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(-43, 197);
+            this.button5.Location = new System.Drawing.Point(-35, 239);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(276, 50);
+            this.button5.Size = new System.Drawing.Size(271, 50);
             this.button5.TabIndex = 10;
             this.button5.Text = "   Usuarios";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -234,7 +238,7 @@
             this.btnLogiout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLogiout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogiout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogiout.Image")));
-            this.btnLogiout.Location = new System.Drawing.Point(3, 504);
+            this.btnLogiout.Location = new System.Drawing.Point(3, 555);
             this.btnLogiout.Name = "btnLogiout";
             this.btnLogiout.Size = new System.Drawing.Size(52, 50);
             this.btnLogiout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -265,11 +269,11 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(-19, 299);
+            this.button3.Location = new System.Drawing.Point(-18, 352);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(254, 50);
             this.button3.TabIndex = 6;
-            this.button3.Text = "  Historico Visitantes";
+            this.button3.Text = "   Historico Visitantes";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -293,11 +297,11 @@
             this.btnMembresia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembresia.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnMembresia.Image = ((System.Drawing.Image)(resources.GetObject("btnMembresia.Image")));
-            this.btnMembresia.Location = new System.Drawing.Point(-113, 354);
+            this.btnMembresia.Location = new System.Drawing.Point(-113, 403);
             this.btnMembresia.Name = "btnMembresia";
-            this.btnMembresia.Size = new System.Drawing.Size(427, 50);
+            this.btnMembresia.Size = new System.Drawing.Size(386, 50);
             this.btnMembresia.TabIndex = 4;
-            this.btnMembresia.Text = "  Historico Encomendas";
+            this.btnMembresia.Text = "   Historico Geral";
             this.btnMembresia.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMembresia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMembresia.UseVisualStyleBackColor = true;
@@ -322,7 +326,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(-26, 71);
+            this.button1.Location = new System.Drawing.Point(-26, 53);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(260, 50);
             this.button1.TabIndex = 0;
@@ -445,6 +449,43 @@
             this.tmFechaHora.Enabled = true;
             this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(-37, 297);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(268, 50);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "     Chaves";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(-1, 56);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(254, 50);
+            this.button6.TabIndex = 16;
+            this.button6.Text = "              Chaves";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +547,8 @@
         private System.Windows.Forms.PictureBox btnLogiout;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button6;
     }
 }
 

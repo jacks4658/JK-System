@@ -100,6 +100,7 @@
             this.btnCancelar.TabIndex = 27;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // bntChaveEnviarDb
             // 
@@ -217,6 +218,7 @@
             this.BtnCerrar.Size = new System.Drawing.Size(38, 38);
             this.BtnCerrar.TabIndex = 4;
             this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // Chave
             // 
@@ -237,7 +239,9 @@
             this.Controls.Add(this.txtChave);
             this.Controls.Add(this.txtMorador);
             this.Controls.Add(this.txtAgente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Chave";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chave";
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
