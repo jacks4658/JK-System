@@ -389,6 +389,23 @@ namespace COMPLETE_FLAT_UI
             AbrirFormEnPanel(fm);
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ListaChavesRetiradas cvh = new ListaChavesRetiradas
+                   ();
+            cvh.FormClosed += new FormClosedEventHandler(MostrarFormLogoAoFechar);
+            AbrirFormEnPanel(cvh);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Historico_Chaves chv = new Historico_Chaves();
+            chv.FormClosed += new FormClosedEventHandler(MostrarFormLogoAoFechar);
+            AbrirFormEnPanel(chv);
+
+            hideSubMenu();
+        }
+
 
         //METODO PARA HORA E FECHA ACTUAL ----------------------------------------------------------
         private void tmFechaHora_Tick(object sender, EventArgs e)

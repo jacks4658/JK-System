@@ -130,7 +130,7 @@ namespace COMPLETE_FLAT_UI
             //inserção sql
 
             //inserção sql
-            SqlCommand c = new SqlCommand("SELECT [NOME] FROM [dbo].[CADASTROvisit_Log]", conexao);
+            SqlCommand c = new SqlCommand("SELECT [RG] FROM [dbo].[CADASTROvisit_Log]", conexao);
 
 
             conexao.Open();

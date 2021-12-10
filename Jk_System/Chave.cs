@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +17,16 @@ namespace COMPLETE_FLAT_UI
         public Chave()
         {
             InitializeComponent();
+        }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void bntEnviarDb_Click(object sender, EventArgs e)
@@ -60,9 +71,12 @@ namespace COMPLETE_FLAT_UI
 
                 //executar sql
                 c.ExecuteNonQuery();
+                Refresh();
 
                 MessageBox.Show("DADOS ENVIADO");
                 conexao.Close();
+
+              
             }
             catch (SqlException ex)
             {
@@ -79,6 +93,48 @@ namespace COMPLETE_FLAT_UI
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BarraTitulo_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void txtAgente_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtMorador.Focus();
+
+            }
+        }
+
+        private void txtMorador_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtChave.Focus();
+
+            }
+        }
+
+        private void txtChave_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtTorre.Focus();
+
+            }
+        }
+
+        private void txtTorre_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtObservacao.Focus();
+
+            }
         }
     }
 }

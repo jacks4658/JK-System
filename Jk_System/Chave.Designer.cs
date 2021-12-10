@@ -54,6 +54,7 @@
             this.txtTorre.Name = "txtTorre";
             this.txtTorre.Size = new System.Drawing.Size(244, 23);
             this.txtTorre.TabIndex = 34;
+            this.txtTorre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTorre_KeyDown);
             // 
             // label8
             // 
@@ -160,6 +161,7 @@
             this.txtChave.Name = "txtChave";
             this.txtChave.Size = new System.Drawing.Size(244, 23);
             this.txtChave.TabIndex = 22;
+            this.txtChave.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtChave_KeyDown);
             // 
             // txtMorador
             // 
@@ -171,6 +173,7 @@
             this.txtMorador.Name = "txtMorador";
             this.txtMorador.Size = new System.Drawing.Size(244, 23);
             this.txtMorador.TabIndex = 21;
+            this.txtMorador.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMorador_KeyDown);
             // 
             // txtAgente
             // 
@@ -182,6 +185,7 @@
             this.txtAgente.Name = "txtAgente";
             this.txtAgente.Size = new System.Drawing.Size(244, 23);
             this.txtAgente.TabIndex = 20;
+            this.txtAgente.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAgente_KeyDown);
             // 
             // BarraTitulo
             // 
@@ -194,6 +198,7 @@
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(624, 38);
             this.BarraTitulo.TabIndex = 35;
+            this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown_1);
             // 
             // label4
             // 
@@ -224,7 +229,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(624, 348);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.txtTorre);

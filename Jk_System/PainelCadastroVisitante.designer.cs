@@ -346,9 +346,10 @@
             this.txtObersevacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtObersevacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtObersevacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObersevacao.Location = new System.Drawing.Point(125, 447);
+            this.txtObersevacao.Location = new System.Drawing.Point(125, 430);
+            this.txtObersevacao.Multiline = true;
             this.txtObersevacao.Name = "txtObersevacao";
-            this.txtObersevacao.Size = new System.Drawing.Size(403, 22);
+            this.txtObersevacao.Size = new System.Drawing.Size(403, 53);
             this.txtObersevacao.TabIndex = 40;
             this.txtObersevacao.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtRuaVisitado_KeyDown);
             // 
@@ -357,7 +358,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(34, 73);
+            this.label10.Location = new System.Drawing.Point(34, 89);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(85, 17);
             this.label10.TabIndex = 41;

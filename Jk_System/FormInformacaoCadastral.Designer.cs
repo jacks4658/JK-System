@@ -388,6 +388,7 @@
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.CADASTRO_LogTableAdapter = null;
             this.tableAdapterManager1.CADASTROvisit_LogTableAdapter = null;
+            this.tableAdapterManager1.CHAVE_LogTableAdapter = null;
             this.tableAdapterManager1.Connection = null;
             this.tableAdapterManager1.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
@@ -396,18 +397,23 @@
             this.Column1.DataPropertyName = "ID";
             this.Column1.HeaderText = "ID";
             this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
             // 
             // nOMEDataGridViewTextBoxColumn
             // 
+            this.nOMEDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.nOMEDataGridViewTextBoxColumn.DataPropertyName = "NOME";
             this.nOMEDataGridViewTextBoxColumn.HeaderText = "NOME";
             this.nOMEDataGridViewTextBoxColumn.Name = "nOMEDataGridViewTextBoxColumn";
+            this.nOMEDataGridViewTextBoxColumn.Width = 64;
             // 
             // rGDataGridViewTextBoxColumn
             // 
+            this.rGDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.rGDataGridViewTextBoxColumn.DataPropertyName = "RG";
             this.rGDataGridViewTextBoxColumn.HeaderText = "RG";
             this.rGDataGridViewTextBoxColumn.Name = "rGDataGridViewTextBoxColumn";
+            this.rGDataGridViewTextBoxColumn.Width = 48;
             // 
             // pLACADataGridViewTextBoxColumn
             // 
@@ -435,20 +441,22 @@
             // 
             // rUADataGridViewTextBoxColumn
             // 
+            this.rUADataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.rUADataGridViewTextBoxColumn.DataPropertyName = "RUA";
-            this.rUADataGridViewTextBoxColumn.HeaderText = "RUA";
+            this.rUADataGridViewTextBoxColumn.HeaderText = "OBSERVAÇÃO";
             this.rUADataGridViewTextBoxColumn.Name = "rUADataGridViewTextBoxColumn";
+            this.rUADataGridViewTextBoxColumn.Width = 105;
             // 
             // qUADRADataGridViewTextBoxColumn
             // 
             this.qUADRADataGridViewTextBoxColumn.DataPropertyName = "QUADRA";
-            this.qUADRADataGridViewTextBoxColumn.HeaderText = "QUADRA";
+            this.qUADRADataGridViewTextBoxColumn.HeaderText = "TORRE";
             this.qUADRADataGridViewTextBoxColumn.Name = "qUADRADataGridViewTextBoxColumn";
             // 
             // aPARTAMENTODataGridViewTextBoxColumn
             // 
             this.aPARTAMENTODataGridViewTextBoxColumn.DataPropertyName = "APARTAMENTO";
-            this.aPARTAMENTODataGridViewTextBoxColumn.HeaderText = "APARTAMENTO";
+            this.aPARTAMENTODataGridViewTextBoxColumn.HeaderText = "AP";
             this.aPARTAMENTODataGridViewTextBoxColumn.Name = "aPARTAMENTODataGridViewTextBoxColumn";
             // 
             // FormInformacaoCadastral

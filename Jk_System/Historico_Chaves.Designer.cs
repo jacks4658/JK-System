@@ -31,6 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Historico_Chaves));
             this.cHAVE_LogDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cHAVE_LogBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.cHAVE_LogTableAdapter = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.CHAVE_LogTableAdapter();
@@ -39,17 +46,7 @@
             this.PanelBarraTitulo = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnNormal = new System.Windows.Forms.Button();
-            this.btnMinimizar = new System.Windows.Forms.Button();
-            this.btnMaximizar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.cHAVE_LogDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cHAVE_LogBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
@@ -82,144 +79,6 @@
             this.cHAVE_LogDataGridView.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.cHAVE_LogDataGridView.Size = new System.Drawing.Size(1015, 700);
             this.cHAVE_LogDataGridView.TabIndex = 1;
-            // 
-            // cHAVE_LogBindingSource
-            // 
-            this.cHAVE_LogBindingSource.DataMember = "CHAVE_Log";
-            this.cHAVE_LogBindingSource.DataSource = this.bancoBandB;
-            // 
-            // bancoBandB
-            // 
-            this.bancoBandB.DataSetName = "BancoBandB";
-            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cHAVE_LogTableAdapter
-            // 
-            this.cHAVE_LogTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CADASTRO_LogTableAdapter = null;
-            this.tableAdapterManager.CADASTROvisit_LogTableAdapter = null;
-            this.tableAdapterManager.CHAVE_LogTableAdapter = this.cHAVE_LogTableAdapter;
-            this.tableAdapterManager.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // btnSavePdf
-            // 
-            this.btnSavePdf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSavePdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.btnSavePdf.CausesValidation = false;
-            this.btnSavePdf.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnSavePdf.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnSavePdf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnSavePdf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.btnSavePdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSavePdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSavePdf.ForeColor = System.Drawing.Color.Black;
-            this.btnSavePdf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSavePdf.Location = new System.Drawing.Point(1044, 50);
-            this.btnSavePdf.Name = "btnSavePdf";
-            this.btnSavePdf.Size = new System.Drawing.Size(95, 33);
-            this.btnSavePdf.TabIndex = 22;
-            this.btnSavePdf.Text = "Salvar Pdf";
-            this.btnSavePdf.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSavePdf.UseVisualStyleBackColor = false;
-            this.btnSavePdf.Click += new System.EventHandler(this.btnSavePdf_Click);
-            // 
-            // PanelBarraTitulo
-            // 
-            this.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.PanelBarraTitulo.Controls.Add(this.pictureBox8);
-            this.PanelBarraTitulo.Controls.Add(this.label1);
-            this.PanelBarraTitulo.Controls.Add(this.btnNormal);
-            this.PanelBarraTitulo.Controls.Add(this.btnMinimizar);
-            this.PanelBarraTitulo.Controls.Add(this.btnMaximizar);
-            this.PanelBarraTitulo.Controls.Add(this.btnCerrar);
-            this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.PanelBarraTitulo.Name = "PanelBarraTitulo";
-            this.PanelBarraTitulo.Size = new System.Drawing.Size(1198, 43);
-            this.PanelBarraTitulo.TabIndex = 23;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(9, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(46, 37);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 5;
-            this.pictureBox8.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(70, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "RELATORIO DE CHAVES";
-            // 
-            // btnNormal
-            // 
-            this.btnNormal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNormal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNormal.FlatAppearance.BorderSize = 0;
-            this.btnNormal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnNormal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNormal.Image = global::COMPLETE_FLAT_UI.Properties.Resources.Normal;
-            this.btnNormal.Location = new System.Drawing.Point(1092, 0);
-            this.btnNormal.Name = "btnNormal";
-            this.btnNormal.Size = new System.Drawing.Size(43, 43);
-            this.btnNormal.TabIndex = 3;
-            this.btnNormal.UseVisualStyleBackColor = true;
-            this.btnNormal.Visible = false;
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.FlatAppearance.BorderSize = 0;
-            this.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar.Image = global::COMPLETE_FLAT_UI.Properties.Resources.Minimize;
-            this.btnMinimizar.Location = new System.Drawing.Point(1048, 0);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(43, 43);
-            this.btnMinimizar.TabIndex = 2;
-            this.btnMinimizar.UseVisualStyleBackColor = true;
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.FlatAppearance.BorderSize = 0;
-            this.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximizar.Image = global::COMPLETE_FLAT_UI.Properties.Resources.maximize3;
-            this.btnMaximizar.Location = new System.Drawing.Point(1094, 0);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(43, 43);
-            this.btnMaximizar.TabIndex = 1;
-            this.btnMaximizar.UseVisualStyleBackColor = true;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Image = global::COMPLETE_FLAT_UI.Properties.Resources.Close;
-            this.btnCerrar.Location = new System.Drawing.Point(1141, 2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(39, 39);
-            this.btnCerrar.TabIndex = 0;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -284,6 +143,98 @@
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.Width = 61;
             // 
+            // cHAVE_LogBindingSource
+            // 
+            this.cHAVE_LogBindingSource.DataMember = "CHAVE_Log";
+            this.cHAVE_LogBindingSource.DataSource = this.bancoBandB;
+            // 
+            // bancoBandB
+            // 
+            this.bancoBandB.DataSetName = "BancoBandB";
+            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cHAVE_LogTableAdapter
+            // 
+            this.cHAVE_LogTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CADASTRO_LogTableAdapter = null;
+            this.tableAdapterManager.CADASTROvisit_LogTableAdapter = null;
+            this.tableAdapterManager.CHAVE_LogTableAdapter = this.cHAVE_LogTableAdapter;
+            this.tableAdapterManager.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // btnSavePdf
+            // 
+            this.btnSavePdf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSavePdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnSavePdf.CausesValidation = false;
+            this.btnSavePdf.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSavePdf.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSavePdf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnSavePdf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnSavePdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSavePdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSavePdf.ForeColor = System.Drawing.Color.Black;
+            this.btnSavePdf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSavePdf.Location = new System.Drawing.Point(1044, 50);
+            this.btnSavePdf.Name = "btnSavePdf";
+            this.btnSavePdf.Size = new System.Drawing.Size(95, 33);
+            this.btnSavePdf.TabIndex = 22;
+            this.btnSavePdf.Text = "Salvar Pdf";
+            this.btnSavePdf.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSavePdf.UseVisualStyleBackColor = false;
+            this.btnSavePdf.Click += new System.EventHandler(this.btnSavePdf_Click);
+            // 
+            // PanelBarraTitulo
+            // 
+            this.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.PanelBarraTitulo.Controls.Add(this.pictureBox8);
+            this.PanelBarraTitulo.Controls.Add(this.label1);
+            this.PanelBarraTitulo.Controls.Add(this.btnCerrar);
+            this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.PanelBarraTitulo.Name = "PanelBarraTitulo";
+            this.PanelBarraTitulo.Size = new System.Drawing.Size(1198, 43);
+            this.PanelBarraTitulo.TabIndex = 23;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(9, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(46, 37);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 5;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(70, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 16);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "RELATORIO DE CHAVES";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Image = global::COMPLETE_FLAT_UI.Properties.Resources.Close;
+            this.btnCerrar.Location = new System.Drawing.Point(1141, 2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(39, 39);
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // Historico_Chaves
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,9 +270,6 @@
         private System.Windows.Forms.Panel PanelBarraTitulo;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnNormal;
-        private System.Windows.Forms.Button btnMinimizar;
-        private System.Windows.Forms.Button btnMaximizar;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
