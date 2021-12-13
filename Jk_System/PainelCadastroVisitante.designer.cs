@@ -47,7 +47,6 @@
             this.txtObersevacao = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textQuadraVisitado = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.BarraTituloViitante.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -376,21 +376,11 @@
             this.textQuadraVisitado.TabIndex = 42;
             this.textQuadraVisitado.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textQuadraVisitado_KeyDown);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(37, 497);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(43, 17);
-            this.label11.TabIndex = 43;
-            this.label11.Text = "Bloco";
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.txtNomeVisitado);
@@ -509,6 +499,17 @@
             this.label12.TabIndex = 47;
             this.label12.Text = "Dados do Visitado";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(33, 121);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(43, 17);
+            this.label11.TabIndex = 49;
+            this.label11.Text = "Torre";
+            // 
             // PainelCadastroVisitante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -518,7 +519,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.textQuadraVisitado);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtObersevacao);
@@ -574,7 +574,6 @@
         private System.Windows.Forms.TextBox txtObersevacao;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textQuadraVisitado;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
@@ -585,5 +584,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label11;
     }
 }

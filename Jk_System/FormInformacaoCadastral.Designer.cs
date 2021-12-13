@@ -435,9 +435,11 @@
             // 
             // mORADORDataGridViewTextBoxColumn
             // 
+            this.mORADORDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.mORADORDataGridViewTextBoxColumn.DataPropertyName = "MORADOR";
             this.mORADORDataGridViewTextBoxColumn.HeaderText = "MORADOR";
             this.mORADORDataGridViewTextBoxColumn.Name = "mORADORDataGridViewTextBoxColumn";
+            this.mORADORDataGridViewTextBoxColumn.Width = 88;
             // 
             // rUADataGridViewTextBoxColumn
             // 

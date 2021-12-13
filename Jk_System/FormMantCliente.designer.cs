@@ -228,9 +228,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(9, 192);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 17);
+            this.label7.Size = new System.Drawing.Size(64, 17);
             this.label7.TabIndex = 16;
-            this.label7.Text = "Bloco/Unidade:";
+            this.label7.Text = "Torre/Ap";
             // 
             // txtdescricao
             // 
@@ -267,7 +267,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::COMPLETE_FLAT_UI.Properties.Resources.icono_cliente;
-            this.pictureBox1.Location = new System.Drawing.Point(401, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(415, 55);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(138, 153);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

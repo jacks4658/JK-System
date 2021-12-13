@@ -29,17 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rECEBIDODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pROPRIETARIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.eNDERECODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mostrarCadastroBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.cADASTROBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -72,6 +66,12 @@
             this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mostrarCadastroTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroTableAdapter();
             this.tableAdapterManager = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rECEBIDODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pROPRIETARIODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eNDERECODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dESCRICAODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cODIGODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarCadastroBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoBandB)).BeginInit();
@@ -110,87 +110,46 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 18;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn2,
+            this.Column1,
             this.rECEBIDODataGridViewTextBoxColumn,
             this.pROPRIETARIODataGridViewTextBoxColumn,
             this.eNDERECODataGridViewTextBoxColumn,
             this.dESCRICAODataGridViewTextBoxColumn,
             this.cODIGODataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.mostrarCadastroBindingSource1;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(24, 56);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.PaleVioletRed;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.Size = new System.Drawing.Size(711, 457);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.PaleVioletRed;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.Size = new System.Drawing.Size(980, 457);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // iDDataGridViewTextBoxColumn2
-            // 
-            this.iDDataGridViewTextBoxColumn2.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn2.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn2.Name = "iDDataGridViewTextBoxColumn2";
-            this.iDDataGridViewTextBoxColumn2.Width = 43;
-            // 
-            // rECEBIDODataGridViewTextBoxColumn
-            // 
-            this.rECEBIDODataGridViewTextBoxColumn.DataPropertyName = "RECEBIDO";
-            this.rECEBIDODataGridViewTextBoxColumn.HeaderText = "RECEBIDO";
-            this.rECEBIDODataGridViewTextBoxColumn.Name = "rECEBIDODataGridViewTextBoxColumn";
-            this.rECEBIDODataGridViewTextBoxColumn.Width = 93;
-            // 
-            // pROPRIETARIODataGridViewTextBoxColumn
-            // 
-            this.pROPRIETARIODataGridViewTextBoxColumn.DataPropertyName = "PROPRIETARIO";
-            this.pROPRIETARIODataGridViewTextBoxColumn.HeaderText = "PROPRIETARIO";
-            this.pROPRIETARIODataGridViewTextBoxColumn.Name = "pROPRIETARIODataGridViewTextBoxColumn";
-            this.pROPRIETARIODataGridViewTextBoxColumn.Width = 120;
-            // 
-            // eNDERECODataGridViewTextBoxColumn
-            // 
-            this.eNDERECODataGridViewTextBoxColumn.DataPropertyName = "ENDERECO";
-            this.eNDERECODataGridViewTextBoxColumn.HeaderText = "ENDERECO";
-            this.eNDERECODataGridViewTextBoxColumn.Name = "eNDERECODataGridViewTextBoxColumn";
-            this.eNDERECODataGridViewTextBoxColumn.Width = 99;
-            // 
-            // dESCRICAODataGridViewTextBoxColumn
-            // 
-            this.dESCRICAODataGridViewTextBoxColumn.DataPropertyName = "DESCRICAO";
-            this.dESCRICAODataGridViewTextBoxColumn.HeaderText = "DESCRICAO";
-            this.dESCRICAODataGridViewTextBoxColumn.Name = "dESCRICAODataGridViewTextBoxColumn";
-            // 
-            // cODIGODataGridViewTextBoxColumn
-            // 
-            this.cODIGODataGridViewTextBoxColumn.DataPropertyName = "CODIGO";
-            this.cODIGODataGridViewTextBoxColumn.HeaderText = "CODIGO";
-            this.cODIGODataGridViewTextBoxColumn.Name = "cODIGODataGridViewTextBoxColumn";
-            this.cODIGODataGridViewTextBoxColumn.Width = 78;
             // 
             // mostrarCadastroBindingSource1
             // 
@@ -427,8 +386,51 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CADASTRO_LogTableAdapter = null;
             this.tableAdapterManager.CADASTROvisit_LogTableAdapter = null;
+            this.tableAdapterManager.CHAVE_LogTableAdapter = null;
             this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "ID";
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.Visible = false;
+            this.Column1.Width = 43;
+            // 
+            // rECEBIDODataGridViewTextBoxColumn
+            // 
+            this.rECEBIDODataGridViewTextBoxColumn.DataPropertyName = "RECEBIDO";
+            this.rECEBIDODataGridViewTextBoxColumn.HeaderText = "RECEBIDO";
+            this.rECEBIDODataGridViewTextBoxColumn.Name = "rECEBIDODataGridViewTextBoxColumn";
+            this.rECEBIDODataGridViewTextBoxColumn.Width = 93;
+            // 
+            // pROPRIETARIODataGridViewTextBoxColumn
+            // 
+            this.pROPRIETARIODataGridViewTextBoxColumn.DataPropertyName = "PROPRIETARIO";
+            this.pROPRIETARIODataGridViewTextBoxColumn.HeaderText = "PROPRIETARIO";
+            this.pROPRIETARIODataGridViewTextBoxColumn.Name = "pROPRIETARIODataGridViewTextBoxColumn";
+            this.pROPRIETARIODataGridViewTextBoxColumn.Width = 120;
+            // 
+            // eNDERECODataGridViewTextBoxColumn
+            // 
+            this.eNDERECODataGridViewTextBoxColumn.DataPropertyName = "ENDERECO";
+            this.eNDERECODataGridViewTextBoxColumn.HeaderText = "ENDERECO";
+            this.eNDERECODataGridViewTextBoxColumn.Name = "eNDERECODataGridViewTextBoxColumn";
+            this.eNDERECODataGridViewTextBoxColumn.Width = 99;
+            // 
+            // dESCRICAODataGridViewTextBoxColumn
+            // 
+            this.dESCRICAODataGridViewTextBoxColumn.DataPropertyName = "DESCRICAO";
+            this.dESCRICAODataGridViewTextBoxColumn.HeaderText = "DESCRICAO";
+            this.dESCRICAODataGridViewTextBoxColumn.Name = "dESCRICAODataGridViewTextBoxColumn";
+            // 
+            // cODIGODataGridViewTextBoxColumn
+            // 
+            this.cODIGODataGridViewTextBoxColumn.DataPropertyName = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.HeaderText = "CODIGO";
+            this.cODIGODataGridViewTextBoxColumn.Name = "cODIGODataGridViewTextBoxColumn";
+            this.cODIGODataGridViewTextBoxColumn.Width = 78;
             // 
             // FormListaClientes
             // 
@@ -505,7 +507,7 @@
         private System.Windows.Forms.BindingSource mostrarCadastroBindingSource1;
         private BancoBandBTableAdapters.MostrarCadastroTableAdapter mostrarCadastroTableAdapter1;
         private BancoBandBTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn rECEBIDODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pROPRIETARIODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eNDERECODataGridViewTextBoxColumn;

@@ -123,34 +123,9 @@ namespace COMPLETE_FLAT_UI
         }
 
         private void PainelCadastroVisitante_Load(object sender, EventArgs e)
+        { 
 
-
-        {
-            SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
-            //inserção sql
-
-            //inserção sql
-            SqlCommand c = new SqlCommand("SELECT [RG] FROM [dbo].[CADASTROvisit_Log]", conexao);
-
-
-            conexao.Open();
-            c.ExecuteNonQuery();
-            SqlDataReader sdr = c.ExecuteReader();
-            AutoCompleteStringCollection complete = new AutoCompleteStringCollection();
-
-
-            while (sdr.Read())
-            {
-                complete.Add(sdr.GetString(0));
-
-
-            }
-
-            txtnome.AutoCompleteCustomSource = complete;
-
-
-            conexao.Close();
-        
+    
 
 
 
@@ -161,27 +136,7 @@ namespace COMPLETE_FLAT_UI
         private void txtnome_KeyDown(object sender, KeyEventArgs e)
         {
 
-            SqlConnection conexao = new SqlConnection("Data Source=bancoazure4658.database.windows.net;Initial Catalog=Banco;user id=azure4658;password=Meg46581279;");
-            //inserção sql
-
-
-
-
-            SqlCommand c = new SqlCommand("SELECT * FROM [dbo].[CADASTROvisit_Log] WHERE NOME= @NOME", conexao);
-
-            c.Parameters.AddWithValue("@NOME", txtnome.Text);
-            conexao.Open();
-            dr = c.ExecuteReader();
-
-            while (dr.Read())
-            {
-                txtnome.Text = (string)dr["nome"];
-                txtrg.Text = (string)dr["rg"];
-                txtcor.Text = (string)dr["cor"];
-                txtendereco.Text = (string)dr["placa"];
-                txtdescricao.Text = (string)dr["modelo"];
-                txtObersevacao.Text = (string)dr["rua"];
-
+        
 
                 if (e.KeyCode == Keys.Enter)
                 {
@@ -189,7 +144,7 @@ namespace COMPLETE_FLAT_UI
 
                 }
             }
-        }
+         
 
 
             
