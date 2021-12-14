@@ -30,8 +30,9 @@ namespace COMPLETE_FLAT_UI
         private void HistoricoVisitante_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'bancoBandB.CADASTROvisit_Log' table. You can move, or remove it, as needed.
-            this.cADASTROvisit_LogTableAdapter1.Fill(this.bancoBandB.CADASTROvisit_Log);
-
+            this.cADASTROvisit_LogTableAdapter.Fill(this.bancoBandB.CADASTROvisit_Log);
+            // TODO: This line of code loads data into the 'bancoBandB.CADASTROvisit_Log' table. You can move, or remove it, as needed.
+           
 
 
         }

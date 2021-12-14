@@ -59,10 +59,6 @@
             this.cADASTROVISITANTEBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tableAdapterManager = new COMPLETE_FLAT_UI.BancoLocalhostTableAdapters.TableAdapterManager();
             this.cADASTRO_VISITANTEDataGridView = new System.Windows.Forms.DataGridView();
-            this.mostrarCadastroVisitanteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
-            this.mostrarCadastroVisitanteTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroVisitanteTableAdapter();
-            this.tableAdapterManager1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nOMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,6 +69,10 @@
             this.rUADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qUADRADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aPARTAMENTODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mostrarCadastroVisitanteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
+            this.mostrarCadastroVisitanteTableAdapter1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.MostrarCadastroVisitanteTableAdapter();
+            this.tableAdapterManager1 = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bancoLocalhost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROVISITANTEBindingSource)).BeginInit();
@@ -109,7 +109,7 @@
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.Silver;
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(1005, 15);
+            this.btnNuevo.Location = new System.Drawing.Point(1057, 15);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 30);
             this.btnNuevo.TabIndex = 13;
@@ -131,7 +131,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Silver;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(1005, 87);
+            this.button2.Location = new System.Drawing.Point(1057, 87);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 30);
             this.button2.TabIndex = 12;
@@ -153,7 +153,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.Silver;
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(1005, 51);
+            this.btnEditar.Location = new System.Drawing.Point(1057, 51);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(100, 30);
             this.btnEditar.TabIndex = 11;
@@ -229,7 +229,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(956, 10);
+            this.button1.Location = new System.Drawing.Point(1014, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(26, 20);
             this.button1.TabIndex = 17;
@@ -366,31 +366,8 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Yellow;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             this.cADASTRO_VISITANTEDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.cADASTRO_VISITANTEDataGridView.Size = new System.Drawing.Size(925, 541);
+            this.cADASTRO_VISITANTEDataGridView.Size = new System.Drawing.Size(1020, 541);
             this.cADASTRO_VISITANTEDataGridView.TabIndex = 19;
-            // 
-            // mostrarCadastroVisitanteBindingSource1
-            // 
-            this.mostrarCadastroVisitanteBindingSource1.DataMember = "MostrarCadastroVisitante";
-            this.mostrarCadastroVisitanteBindingSource1.DataSource = this.bancoBandB;
-            // 
-            // bancoBandB
-            // 
-            this.bancoBandB.DataSetName = "BancoBandB";
-            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mostrarCadastroVisitanteTableAdapter1
-            // 
-            this.mostrarCadastroVisitanteTableAdapter1.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager1
-            // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.CADASTRO_LogTableAdapter = null;
-            this.tableAdapterManager1.CADASTROvisit_LogTableAdapter = null;
-            this.tableAdapterManager1.CHAVE_LogTableAdapter = null;
-            this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // Column1
             // 
@@ -461,12 +438,35 @@
             this.aPARTAMENTODataGridViewTextBoxColumn.HeaderText = "AP";
             this.aPARTAMENTODataGridViewTextBoxColumn.Name = "aPARTAMENTODataGridViewTextBoxColumn";
             // 
+            // mostrarCadastroVisitanteBindingSource1
+            // 
+            this.mostrarCadastroVisitanteBindingSource1.DataMember = "MostrarCadastroVisitante";
+            this.mostrarCadastroVisitanteBindingSource1.DataSource = this.bancoBandB;
+            // 
+            // bancoBandB
+            // 
+            this.bancoBandB.DataSetName = "BancoBandB";
+            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mostrarCadastroVisitanteTableAdapter1
+            // 
+            this.mostrarCadastroVisitanteTableAdapter1.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager1
+            // 
+            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager1.CADASTRO_LogTableAdapter = null;
+            this.tableAdapterManager1.CADASTROvisit_LogTableAdapter = null;
+            this.tableAdapterManager1.CHAVE_LogTableAdapter = null;
+            this.tableAdapterManager1.Connection = null;
+            this.tableAdapterManager1.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // FormInformacaoCadastral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(1108, 541);
+            this.ClientSize = new System.Drawing.Size(1160, 541);
             this.Controls.Add(this.cADASTRO_VISITANTEDataGridView);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);

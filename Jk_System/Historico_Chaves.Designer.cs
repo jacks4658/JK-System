@@ -77,7 +77,7 @@
             this.cHAVE_LogDataGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.cHAVE_LogDataGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Yellow;
             this.cHAVE_LogDataGridView.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.cHAVE_LogDataGridView.Size = new System.Drawing.Size(1015, 700);
+            this.cHAVE_LogDataGridView.Size = new System.Drawing.Size(1148, 437);
             this.cHAVE_LogDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn7
@@ -178,7 +178,7 @@
             this.btnSavePdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSavePdf.ForeColor = System.Drawing.Color.Black;
             this.btnSavePdf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSavePdf.Location = new System.Drawing.Point(1044, 50);
+            this.btnSavePdf.Location = new System.Drawing.Point(1029, 486);
             this.btnSavePdf.Name = "btnSavePdf";
             this.btnSavePdf.Size = new System.Drawing.Size(95, 33);
             this.btnSavePdf.TabIndex = 22;
@@ -196,7 +196,7 @@
             this.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.PanelBarraTitulo.Name = "PanelBarraTitulo";
-            this.PanelBarraTitulo.Size = new System.Drawing.Size(1198, 43);
+            this.PanelBarraTitulo.Size = new System.Drawing.Size(1166, 43);
             this.PanelBarraTitulo.TabIndex = 23;
             // 
             // pictureBox8
@@ -228,7 +228,7 @@
             this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Image = global::COMPLETE_FLAT_UI.Properties.Resources.Close;
-            this.btnCerrar.Location = new System.Drawing.Point(1141, 2);
+            this.btnCerrar.Location = new System.Drawing.Point(1109, 2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(39, 39);
             this.btnCerrar.TabIndex = 0;
@@ -240,7 +240,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(1198, 450);
+            this.ClientSize = new System.Drawing.Size(1166, 556);
             this.Controls.Add(this.PanelBarraTitulo);
             this.Controls.Add(this.btnSavePdf);
             this.Controls.Add(this.cHAVE_LogDataGridView);

@@ -18,7 +18,7 @@ namespace COMPLETE_FLAT_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormHistrorico());
+            Application.Run(new FormLogin());
         }
     }
 }
