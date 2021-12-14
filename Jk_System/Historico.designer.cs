@@ -32,6 +32,14 @@
             this.tableAdapterManager2 = new COMPLETE_FLAT_UI.BancoDataSetTableAdapters.TableAdapterManager();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cADASTRO_LogDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cADASTROLogBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bancoBandB = new COMPLETE_FLAT_UI.BancoBandB();
             this.cADASTRO_LogTableAdapter4 = new COMPLETE_FLAT_UI.BancoLocalhostTableAdapters.CADASTRO_LogTableAdapter();
@@ -43,14 +51,6 @@
             this.cADASTRO_LogBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cADASTRO_LogTableAdapter = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.CADASTRO_LogTableAdapter();
             this.tableAdapterManager = new COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTRO_LogDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cADASTROLogBindingSource)).BeginInit();
@@ -79,7 +79,7 @@
             this.panel1.ForeColor = System.Drawing.Color.Snow;
             this.panel1.Location = new System.Drawing.Point(0, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1098, 500);
+            this.panel1.Size = new System.Drawing.Size(1154, 500);
             this.panel1.TabIndex = 24;
             // 
             // cADASTRO_LogDataGridView
@@ -102,109 +102,13 @@
             this.cADASTRO_LogDataGridView.Location = new System.Drawing.Point(3, 3);
             this.cADASTRO_LogDataGridView.Name = "cADASTRO_LogDataGridView";
             this.cADASTRO_LogDataGridView.ReadOnly = true;
+            this.cADASTRO_LogDataGridView.RowHeadersVisible = false;
             this.cADASTRO_LogDataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
             this.cADASTRO_LogDataGridView.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.cADASTRO_LogDataGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Yellow;
             this.cADASTRO_LogDataGridView.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.cADASTRO_LogDataGridView.Size = new System.Drawing.Size(1124, 437);
+            this.cADASTRO_LogDataGridView.Size = new System.Drawing.Size(1148, 437);
             this.cADASTRO_LogDataGridView.TabIndex = 0;
-            // 
-            // cADASTROLogBindingSource
-            // 
-            this.cADASTROLogBindingSource.DataMember = "CADASTRO_Log";
-            this.cADASTROLogBindingSource.DataSource = this.bancoBandB;
-            // 
-            // bancoBandB
-            // 
-            this.bancoBandB.DataSetName = "BancoBandB";
-            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cADASTRO_LogTableAdapter4
-            // 
-            this.cADASTRO_LogTableAdapter4.ClearBeforeFill = true;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(397, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(322, 24);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "HISTORICO DE TODAS ENTREGAS";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // btnSavePdf
-            // 
-            this.btnSavePdf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSavePdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.btnSavePdf.CausesValidation = false;
-            this.btnSavePdf.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnSavePdf.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
-            this.btnSavePdf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnSavePdf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.btnSavePdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSavePdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSavePdf.ForeColor = System.Drawing.Color.Black;
-            this.btnSavePdf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSavePdf.Location = new System.Drawing.Point(991, 3);
-            this.btnSavePdf.Name = "btnSavePdf";
-            this.btnSavePdf.Size = new System.Drawing.Size(95, 33);
-            this.btnSavePdf.TabIndex = 21;
-            this.btnSavePdf.Text = "Salvar Pdf";
-            this.btnSavePdf.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSavePdf.UseVisualStyleBackColor = false;
-            this.btnSavePdf.Click += new System.EventHandler(this.btnSavePdf_Click);
-            // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCerrar.FlatAppearance.BorderSize = 0;
-            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCerrar.Image = global::COMPLETE_FLAT_UI.Properties.Resources.Close;
-            this.BtnCerrar.Location = new System.Drawing.Point(3, 3);
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.Size = new System.Drawing.Size(50, 17);
-            this.BtnCerrar.TabIndex = 22;
-            this.BtnCerrar.UseVisualStyleBackColor = true;
-            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.BtnCerrar);
-            this.panel2.Controls.Add(this.btnSavePdf);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1098, 38);
-            this.panel2.TabIndex = 24;
-            // 
-            // mostrarCadastroTableAdapter
-            // 
-            this.mostrarCadastroTableAdapter.ClearBeforeFill = true;
-            // 
-            // cADASTRO_LogBindingSource
-            // 
-            this.cADASTRO_LogBindingSource.DataMember = "CADASTRO_Log";
-            this.cADASTRO_LogBindingSource.DataSource = this.bancoBandB;
-            // 
-            // cADASTRO_LogTableAdapter
-            // 
-            this.cADASTRO_LogTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CADASTRO_LogTableAdapter = this.cADASTRO_LogTableAdapter;
-            this.tableAdapterManager.CADASTROvisit_LogTableAdapter = null;
-            this.tableAdapterManager.CHAVE_LogTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -277,12 +181,109 @@
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             this.dataGridViewTextBoxColumn2.Width = 61;
             // 
+            // cADASTROLogBindingSource
+            // 
+            this.cADASTROLogBindingSource.DataMember = "CADASTRO_Log";
+            this.cADASTROLogBindingSource.DataSource = this.bancoBandB;
+            // 
+            // bancoBandB
+            // 
+            this.bancoBandB.DataSetName = "BancoBandB";
+            this.bancoBandB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cADASTRO_LogTableAdapter4
+            // 
+            this.cADASTRO_LogTableAdapter4.ClearBeforeFill = true;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(431, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(322, 24);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "HISTORICO DE TODAS ENTREGAS";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnSavePdf
+            // 
+            this.btnSavePdf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSavePdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnSavePdf.CausesValidation = false;
+            this.btnSavePdf.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnSavePdf.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnSavePdf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnSavePdf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnSavePdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSavePdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSavePdf.ForeColor = System.Drawing.Color.Black;
+            this.btnSavePdf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSavePdf.Location = new System.Drawing.Point(1059, 3);
+            this.btnSavePdf.Name = "btnSavePdf";
+            this.btnSavePdf.Size = new System.Drawing.Size(95, 33);
+            this.btnSavePdf.TabIndex = 21;
+            this.btnSavePdf.Text = "Salvar Pdf";
+            this.btnSavePdf.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSavePdf.UseVisualStyleBackColor = false;
+            this.btnSavePdf.Click += new System.EventHandler(this.btnSavePdf_Click);
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCerrar.FlatAppearance.BorderSize = 0;
+            this.BtnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCerrar.Image = global::COMPLETE_FLAT_UI.Properties.Resources.Close;
+            this.BtnCerrar.Location = new System.Drawing.Point(3, 3);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.Size = new System.Drawing.Size(50, 17);
+            this.BtnCerrar.TabIndex = 22;
+            this.BtnCerrar.UseVisualStyleBackColor = true;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.BtnCerrar);
+            this.panel2.Controls.Add(this.btnSavePdf);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1166, 38);
+            this.panel2.TabIndex = 24;
+            // 
+            // mostrarCadastroTableAdapter
+            // 
+            this.mostrarCadastroTableAdapter.ClearBeforeFill = true;
+            // 
+            // cADASTRO_LogBindingSource
+            // 
+            this.cADASTRO_LogBindingSource.DataMember = "CADASTRO_Log";
+            this.cADASTRO_LogBindingSource.DataSource = this.bancoBandB;
+            // 
+            // cADASTRO_LogTableAdapter
+            // 
+            this.cADASTRO_LogTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CADASTRO_LogTableAdapter = this.cADASTRO_LogTableAdapter;
+            this.tableAdapterManager.CADASTROvisit_LogTableAdapter = null;
+            this.tableAdapterManager.CHAVE_LogTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = COMPLETE_FLAT_UI.BancoBandBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // FormHistrorico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(1098, 556);
+            this.ClientSize = new System.Drawing.Size(1166, 556);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "FormHistrorico";

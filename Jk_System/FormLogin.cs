@@ -58,9 +58,8 @@ namespace FlatLoginWatermark
             numeroID.Next();
 
 
+           
             SqlCommand c = new SqlCommand(Sql, conexao);
-
-
 
 
             c.Parameters.Add(new SqlParameter("@ID", numeroID.Next()));
